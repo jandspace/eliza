@@ -1,0 +1,66 @@
+.image-gallery {
+  position: relative;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 48px 15px;
+  margin-bottom: 15px;
+  &.bg-gradient-mar-pam {
+    background: $grad-mar-pam-down;
+  }
+  &.bg-color-oat {
+    background-color: $color-oat;
+  }
+  &.bg-color-pampas {
+    background-color: $color-pampas;
+  }
+  &.bg-color-khaki {
+    background-color: $color-khaki;
+  }
+  @mixin md {
+    max-width: calc(100% + 30px);
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .gallery-inner {
+    display: block;
+    .gallery-wrapper {
+      position: relative;
+      height: auto;
+      margin: 30px -15px;
+      @mixin md {
+        margin: 30px -30px;
+      }
+
+      .grid {
+        display: flex;
+        flex-wrap: wrap;
+        --height: 128; /* Minimal row height */
+        --ratio: 1; /* Default aspect ratio for photos that are not loaded yet */
+
+        @mixin sm {
+          --height: 152; /* Minimal row height */
+        }
+        @mixin md {
+          --height: 178; /* Minimal row height */
+        }
+
+        .gallery-item {
+          flex: calc(var(--height) / var(--ratio));
+          min-width: calc(var(--height) / var(--ratio) * 1px);
+          margin: 2px;
+          font-size: 0;
+          > img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .view-all {
+      text-align: center;
+      .btn {
+        min-width: 50%;
+        text-decoration: none;
+      }
+    }
+  }
+}

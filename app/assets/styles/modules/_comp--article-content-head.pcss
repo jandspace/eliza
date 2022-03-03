@@ -1,0 +1,57 @@
+.article-content-head {
+  position: relative;
+  margin-bottom: 1rem;
+  @mixin md {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .article-featured-image {
+    margin: -15px -15px 1rem;
+    @mixin md {
+      margin: -15px -30px 1rem;
+    }
+  }
+  .desc-container {
+    margin-bottom: 1rem;
+    .article-title {
+      margin: 0 0 1rem 0;
+    }
+    .article-summary {
+      font-size: $font-size-md;
+      line-height: $line-height-md;
+    }
+  }
+  .pubinfo-container {
+    display: flex;
+    align-items: center;
+    font-size: $font-size-sm;
+
+    .info-author {
+      display: flex;
+      align-items: center;
+      max-width: 50%;
+      .author-profile {
+        width: 28px;
+        height: 28px;
+        margin-right: 6px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: $color-black;
+      }
+      .author-name {
+        color: $color-black;
+        line-height: $line-height-sm;
+        font-weight: $font-normal;
+      }
+    }
+    .divider {
+      display: inline-block;
+      padding: 0 8px;
+      color: $color-black20;
+    }
+    .info-date {
+      max-width: 50%;
+      color: $color-black60;
+    }
+  }
+}

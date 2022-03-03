@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <title>Eliza - page-home</title>
+    <!-- Bootstrap CSS Import -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    
+  </head>
+
+  <body class="page-home">
+    <!-- Eliza Header-->
+    <header class="header global-header">
+      <div class="flex-container">
+        <div class="flex-item l-fn">
+          <nav class="main-nav">
+            <a class="nav-trigger" data-bs-toggle="offcanvas" href="#mainnav" role="button" aria-controls="mainnav">
+              <span class="ico-menu size-18 c-black"><!--icon--></span>
+            </a>
+          </nav>
+        </div>
+        <div class="flex-item c-fn">
+          <div class="logo">
+            <a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 92 36" viewBox="0 0 92 36" class="eliza-logo">
+                <g fill="#020203">
+                  <path d="m34.54 22.48v-18.48l-7.72 1.86.06.22c2.38-.53 2.5.44 2.5 2.3v14.09c0 2.66-.25 3.22-2.22 3.22v.22h9.6v-.21c-1.98 0-2.22-.56-2.22-3.22z"></path>
+                  <path d="m44.58 22.48v-8.13l.06-3.19-7.77 1.86.06.22c2.38-.53 2.5.44 2.5 2.3v6.94c0 2.66-.25 3.22-2.22 3.22v.22h9.6v-.22c-1.98 0-2.23-.56-2.23-3.22z"></path>
+                  <path d="m42 10.1c1.65 0 2.98-1.31 3.05-2.94.07-1.62-1.24-3.06-2.87-3.15-1.74-.1-3.23 1.29-3.23 3.02 0 1.69 1.38 3.07 3.05 3.07z"></path>
+                  <path d="m53.29 25.7 8.96-14.37h-9.3c-1.02-.02-3.01.21-4.31 1.15-.71.52-1.21 1.26-1.23 2.29-.01.78.29 1.37.8 1.74.07.06.16.11.24.15.35.19.78.3 1.24.3 1.1.02 2.08-.62 2.18-2.01-.51-.23-.84-.96-.83-1.52.01-.39.09-.73.22-1.02.28-.57.83-.91 1.67-.9 0 0 3.06.02 3.24.02l-.01.01-8.99 14.38h13.93l1.19-7.21h-.22c-.85 4.57-2.54 6.99-8.78 6.99z"></path>
+                  <path d="m83.89 25.49c-1.39 0-2.79.81-2.87 2.63.73.22 1.56.9 1.56 1.92 0 1.14-.78 1.7-1.73 1.7-2.48 0-2.59-2.76-2.59-6.67v-9.59c0-3.24-3.52-4.32-7.42-4.32-1.82 0-6.28.7-6.28 4.04 0 1.59 1.14 2.48 2.65 2.48 1.26 0 2.37-.75 2.46-2.35-.58-.25-.98-1.09-.98-1.73 0-1.37.7-2.23 2.15-2.23 1.92 0 2.23 1.95 2.23 3.71v1.67c-3.1 2.18-9.43 1.39-9.43 5.83 0 2.4 1.67 3.68 4.3 3.68 2.23 0 4.41-1.17 5.19-3.17v.65c0 5.44 4.13 8.26 7.73 8.26 2.65 0 5.86-1.03 5.86-3.71-.01-1.88-1.35-2.8-2.83-2.8zm-10.83-3.32c0 1.03-.64 2.07-1.82 2.07-1.45 0-1.92-1.42-1.92-2.76 0-3.12 1.79-3.15 3.74-4.44z"></path>
+                  <path d="m22.36 22.75c-2.64 0-4.72-1.69-4.87-5.55 3.35.26 6.2.35 9.23-.11.89-3.52-1.64-5.94-6.38-5.94-4.03 0-6.91 2.18-7.81 5.5-.63-.09-1.18-.26-2.3-.26-2.27 0-4.94.75-4.94 3.3 0 1.77 1.42 2.8 2.86 2.8 1.39 0 2.72-.8 2.8-2.55-.67-.28-1.3-.86-1.3-1.77 0-1.16 1-1.39 1.69-1.39.39 0 .52.04 1.13.11-.15.64-.23 1.32-.23 2.03 0 4.52 3.27 7.27 7.12 7.27s6.38-2.44 7.6-5.41l-.17-.08c-.98 1.52-3.04 2.05-4.43 2.05zm-4.87-6.02c0-2 .47-5.35 2.86-5.35 2.17 0 1.95 3.78 1.37 5.78-1.41.01-2.81-.09-4.22-.19-.01-.08-.01-.16-.01-.24z"></path>
+                </g>
+              </svg>
+              <!-- <img src="http://jandspace.com/wp-content/uploads/2022/02/logo-eliza.svg" class="eliza-logo" /> -->
+            </a>
+          </div>
+        </div>
+        <div class="flex-item r-fn"></div>
+      </div>
+    </header>
+    <div class="nav-container offcanvas offcanvas-start" tabindex="-1" id="mainnav" aria-labelledby="mainnavLabel">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="home-button-container">
+          <a href="" class="btn secondary reverse sm home-btn">Home</a>
+        </div>
+      </div>
+      <div class="offcanvas-body">
+        <div class="offcanvas-content">
+          <ul class="nav-panel-menu primary-menu-container">
+            <li class="primary-menu">
+              <a href="#" class="menu-link">Fashion</a>
+            </li>
+            <li class="primary-menu">
+              <a href="#" class="menu-link">Beauty</a>
+            </li>
+            <li class="primary-menu">
+              <a href="#" class="menu-link">Living</a>
+            </li>
+          </ul>
+          <ul class="nav-panel-menu secondary-menu-container">
+            <li class="secondary-menu">
+              <a href="#" class="menu-link">About Eliza</a>
+            </li>
+            <li class="secondary-menu">
+              <a href="#" class="menu-link">Contact Us</a>
+            </li>
+            <li class="secondary-menu">
+              <a href="#" class="menu-link">Terms and Conditions</a>
+            </li>
+            <li class="secondary-menu">
+              <a href="#" class="menu-link">Privacy Policy</a>
+            </li>
+          </ul>
+          <div class="nav-panel-menu sn-link-container">
+            <p>Follow us on</p>
+            <div class="sn-link-wrapper">
+              <a href="#" class="sn-link">
+                <span class="ico-sn-instagram size-36 c-white"><!--icon--></span>
+                <!-- <img src="http://jandspace.com/wp-content/uploads/2022/02/ico-sn-instagram.svg" class="sn-icon sn-instagram" /> -->
+              </a>
+              <a href="#" class="sn-link">
+                <span class="ico-sn-tiktok size-36 c-white"><!--icon--></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="main">
+      <div class="main-wrapper">
+        <div class="home-hero">
+          <article class="hero-article">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a href="#" class="hero-article-field">
+                    <div class="image-container">
+                      <img src="https://cdn.pixabay.com/photo/2021/03/22/16/07/woman-6115105_1280.jpg" class="article-image" />
+                    </div>
+                    <div class="desc-container">
+                      <div class="desc-inner">
+                        <label class="tags primary-tag">Primary Tag</label>
+                        <h2 class="article-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum eleifend magna</h2>
+                        <p class="article-preview">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum eleifend magna, sed varius urna vestibulum vel. Praesent et tortor ante. Aenean auctor elit augue, vel suscipit mi volutpat sit amet. Mauris tincidunt convallis est porta tristique. Sed fermentum fringilla sodales. Suspendisse sit amet sagittis neque. Nunc facilisis diam pretium ex iaculis posuere. Praesent dolor mauris, mollis sit amet hendrerit vel, placerat eget purus. Aliquam erat volutpat.</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="#" class="hero-article-field">
+                    <div class="image-container">
+                      <img src="https://cdn.pixabay.com/photo/2016/11/16/10/28/girls-1828539__480.jpg" class="article-image" />
+                    </div>
+                    <div class="desc-container">
+                      <div class="desc-inner">
+                        <label class="tags primary-tag">Primary Tag</label>
+                        <h2 class="article-title">Crostristique et sollicitudin acporta ac elit.</h2>
+                        <p class="article-preview">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum eleifend magna, sed varius urna vestibulum vel. Praesent et tortor ante. Aenean auctor elit augue, vel suscipit mi volutpat sit amet. Mauris tincidunt convallis est porta tristique. Sed fermentum fringilla sodales. Suspendisse sit amet sagittis neque. Nunc facilisis diam pretium ex iaculis posuere. Praesent dolor mauris, mollis sit amet hendrerit vel, placerat eget purus. Aliquam erat volutpat.</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="#" class="hero-article-field">
+                    <div class="image-container">
+                      <img src="https://cdn.pixabay.com/photo/2020/06/27/16/40/apartment-5346460_1280.jpg" class="article-image" />
+                    </div>
+                    <div class="desc-container">
+                      <div class="desc-inner">
+                        <label class="tags primary-tag">Primary Tag</label>
+                        <h2 class="article-title">Donec enim erostristique et sollicitudin acporta ac elit.</h2>
+                        <p class="article-preview">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum eleifend magna, sed varius urna vestibulum vel. Praesent et tortor ante. Aenean auctor elit augue, vel suscipit mi volutpat sit amet. Mauris tincidunt convallis est porta tristique. Sed fermentum fringilla sodales. Suspendisse sit amet sagittis neque. Nunc facilisis diam pretium ex iaculis posuere. Praesent dolor mauris, mollis sit amet hendrerit vel, placerat eget purus. Aliquam erat volutpat.</p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="ico-arrow-left size-16 c-white"><!--icon--></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="ico-arrow-right size-16 c-white"><!--icon--></span>
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <div class="category-link-container">
+          <div class="flex-container">
+            <div class="flex-item"><a href="#" class="category-link">Fashion</a></div>
+            <div class="flex-item"><a href="#" class="category-link">Beauty</a></div>
+            <div class="flex-item"><a href="#" class="category-link">Living</a></div>
+          </div>
+        </div>
+
+        <div class="article-container">
+          <div class="article-group article-grid flex-container">
+            <!-- Article Card -->
+            <article class="article flex-item card-type-a">
+              <div class="article-inner">
+                <a href="#" class="article-image-field">
+                  <div class="image-container">
+                    <img src="https://cdn.pixabay.com/photo/2019/06/11/10/56/girl-4266712__480.jpg" class="article-image" />
+                  </div>
+                  <div class="category-circle fashion">
+                    <svg viewBox="0 0 100 100" width="120" height="120">
+                      <defs>
+                        <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
+                      </defs>
+                      <text>
+                        <textPath xlink:href="#circle">FASHION</textPath>
+                      </text>
+                    </svg>
+                  </div>
+                </a>
+                <div class="article-desc-field match-height">
+                  <div class="desc-inner">
+                    <label class="tags primary-tag">
+                      <a href="#">Primary Tag</a>
+                    </label>
+                    <h2 class="article-title">
+                      <a href="#">Card A : Article Title Here: Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec enim erostristique et sollicitudin acporta ac elit.</a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Product Gallery -->
+            <section class="product-gallery bg-gradient-mar-pam">
+              <div class="disclaimer">*Eliza may earn commission on sales from these product links</div>
+              <div class="gallery-inner">
+                <h2 class="gallery-title">10 Stylish Birthday Outfits For Your Special Day</h2>
+                <div class="product-wrapper">
+                  <ul class="product-items">
+                    <li class="item">
+                      <div class="product-container">
+                        <a href="#" class="image-container">
+                          <label class="lab-info">Sustainable</label>
+                          <img src="https://cdn.pixabay.com/photo/2019/06/11/10/56/girl-4266712__480.jpg" class="product-image" />
+                        </a>
+                        <div class="desc-container">
+                          <a href="#" class="desc-link">
+                            <div class="prod-price">£99</div>
+                            <div class="prod-title">Lorem ipsum dolor sit amet consectetur</div>
+                            <div class="prod-brand">Brand</div>
+                          </a>
+                          <div class="link-box">
+                            <a href="#" class="btn sm icon">
+                              Buy Now <span class="ico-shopping-bag size-12 c-white"><!--icon--></span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item">
+                      <div class="product-container">
+                        <a href="#" class="image-container">
+                          <label class="lab-info">Sustainable</label>
+                          <img src="https://cdn.pixabay.com/photo/2015/07/28/09/18/girl-864107__480.jpg" class="product-image" />
+                        </a>
+                        <div class="desc-container">
+                          <a href="#" class="desc-link">
+                            <div class="prod-price">£99</div>
+                            <div class="prod-title">Lorem ipsum dolor sit amet consectetur</div>
+                            <div class="prod-brand">Brand</div>
+                          </a>
+                          <div class="link-box">
+                            <a href="#" class="btn sm icon">
+                              Buy Now <span class="ico-shopping-bag size-12 c-white"><!--icon--></span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item">
+                      <div class="product-container">
+                        <a href="#" class="image-container">
+                          <label class="lab-info">Sustainable</label>
+                          <img src="https://cdn.pixabay.com/photo/2016/10/22/20/55/makeup-brushes-1761648__340.jpg" class="product-image" />
+                        </a>
+                        <div class="desc-container">
+                          <a href="#" class="desc-link">
+                            <div class="prod-price">£99</div>
+                            <div class="prod-title">Lorem ipsum dolor sit amet consectetur</div>
+                            <div class="prod-brand">Brand</div>
+                          </a>
+                          <div class="link-box">
+                            <a href="#" class="btn sm icon">
+                              Buy Now <span class="ico-shopping-bag size-12 c-white"><!--icon--></span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item">
+                      <div class="product-container">
+                        <a href="#" class="image-container">
+                          <label class="lab-info">Sustainable</label>
+                          <img src="https://cdn.pixabay.com/photo/2017/03/30/18/17/girl-2189247__340.jpg" class="product-image" />
+                        </a>
+                        <div class="desc-container">
+                          <a href="#" class="desc-link">
+                            <div class="prod-price">£99</div>
+                            <div class="prod-title">Lorem ipsum dolor sit amet consectetur</div>
+                            <div class="prod-brand">Brand</div>
+                          </a>
+                          <div class="link-box">
+                            <a href="#" class="btn sm icon">
+                              Buy Now <span class="ico-shopping-bag size-12 c-white"><!--icon--></span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item">
+                      <div class="product-container">
+                        <a href="#" class="image-container">
+                          <label class="lab-info">Sustainable</label>
+                          <img src="https://cdn.pixabay.com/photo/2015/05/31/13/29/lipstick-791761__480.jpg" class="product-image" />
+                        </a>
+                        <div class="desc-container">
+                          <a href="#" class="desc-link">
+                            <div class="prod-price">£99</div>
+                            <div class="prod-title">Lorem ipsum dolor sit amet consectetur</div>
+                            <div class="prod-brand">Brand</div>
+                          </a>
+                          <div class="link-box">
+                            <a href="#" class="btn sm icon">
+                              Buy Now <span class="ico-shopping-bag size-12 c-white"><!--icon--></span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item">
+                      <div class="product-container">
+                        <a href="#" class="image-container">
+                          <label class="lab-info">Sustainable</label>
+                          <img src="https://cdn.pixabay.com/photo/2014/07/31/22/50/photographer-407068__480.jpg" class="product-image" />
+                        </a>
+                        <div class="desc-container">
+                          <a href="#" class="desc-link">
+                            <div class="prod-price">£99</div>
+                            <div class="prod-title">Lorem ipsum dolor sit amet consectetur</div>
+                            <div class="prod-brand">Brand</div>
+                          </a>
+                          <div class="link-box">
+                            <a href="#" class="btn sm icon">
+                              Buy Now <span class="ico-shopping-bag size-12 c-white"><!--icon--></span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item">
+                      <div class="product-container">
+                        <a href="#" class="image-container">
+                          <label class="lab-info">Sustainable</label>
+                          <img src="https://cdn.pixabay.com/photo/2022/01/17/12/37/venice-6944590__480.jpg" class="product-image" />
+                        </a>
+                        <div class="desc-container">
+                          <a href="#" class="desc-link">
+                            <div class="prod-price">£99</div>
+                            <div class="prod-title">Lorem ipsum dolor sit amet consectetur</div>
+                            <div class="prod-brand">Brand</div>
+                          </a>
+                          <div class="link-box">
+                            <a href="#" class="btn sm icon">
+                              Buy Now <span class="ico-shopping-bag size-12 c-white"><!--icon--></span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item">
+                      <div class="product-container">
+                        <a href="#" class="image-container">
+                          <label class="lab-info">Sustainable</label>
+                          <img src="https://cdn.pixabay.com/photo/2017/08/10/05/18/home-2618511__480.jpg" class="product-image" />
+                        </a>
+                        <div class="desc-container">
+                          <a href="#" class="desc-link">
+                            <div class="prod-price">£99</div>
+                            <div class="prod-title">Lorem ipsum dolor sit amet consectetur</div>
+                            <div class="prod-brand">Brand</div>
+                          </a>
+                          <div class="link-box">
+                            <a href="#" class="btn sm icon">
+                              Buy Now <span class="ico-shopping-bag size-12 c-white"><!--icon--></span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item">
+                      <div class="product-container">
+                        <a href="#" class="image-container">
+                          <label class="lab-info">Sustainable</label>
+                          <img src="https://cdn.pixabay.com/photo/2018/01/11/09/51/woman-3075743__480.jpg" class="product-image" />
+                        </a>
+                        <div class="desc-container">
+                          <a href="#" class="desc-link">
+                            <div class="prod-price">£99</div>
+                            <div class="prod-title">Lorem ipsum dolor sit amet consectetur</div>
+                            <div class="prod-brand">Brand</div>
+                          </a>
+                          <div class="link-box">
+                            <a href="#" class="btn sm icon">
+                              Buy Now <span class="ico-shopping-bag size-12 c-white"><!--icon--></span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="item">
+                      <div class="product-container">
+                        <a href="#" class="image-container">
+                          <label class="lab-info">Sustainable</label>
+                          <img src="https://cdn.pixabay.com/photo/2017/04/06/11/24/fashion-2208045__480.jpg" class="product-image" />
+                        </a>
+                        <div class="desc-container">
+                          <a href="#" class="desc-link">
+                            <div class="prod-price">£99</div>
+                            <div class="prod-title">Lorem ipsum dolor sit amet consectetur</div>
+                            <div class="prod-brand">Brand</div>
+                          </a>
+                          <div class="link-box">
+                            <a href="#" class="btn sm icon">
+                              Buy Now <span class="ico-shopping-bag size-12 c-white"><!--icon--></span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="paddles gallery-nav">
+                  <button class="btn sm icon-only left-paddle paddle hidden">
+                    <span class="ico-arrow-left size-16 c-white"><!--icon--></span>
+                  </button>
+                  <button class="btn sm icon-only right-paddle paddle">
+                    <span class="ico-arrow-right size-16 c-white"><!--icon--></span>
+                  </button>
+                </div>
+              </div>
+            </section>
+
+            <!-- Article Card -->
+            <article class="article flex-item card-type-b">
+              <div class="article-inner">
+                <a href="#" class="article-image-field">
+                  <div class="image-container">
+                    <img src="https://cdn.pixabay.com/photo/2015/07/28/09/18/girl-864107__480.jpg" class="article-image" />
+                  </div>
+                  <div class="category-circle fashion">
+                    <svg viewBox="0 0 100 100" width="120" height="120">
+                      <defs>
+                        <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
+                      </defs>
+                      <text>
+                        <textPath xlink:href="#circle">FASHION</textPath>
+                      </text>
+                    </svg>
+                  </div>
+                </a>
+                <div class="article-desc-field match-height">
+                  <div class="desc-inner">
+                    <label class="tags primary-tag">
+                      <a href="#">Primary Tag</a>
+                    </label>
+                    <h2 class="article-title">
+                      <a href="#">Card B : Article Title Here: Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec enim erostristique et sollicitudin acporta ac elit.</a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article Card -->
+            <article class="article flex-item card-type-c">
+              <div class="article-inner">
+                <a href="#" class="article-image-field">
+                  <div class="image-container">
+                    <img src="https://cdn.pixabay.com/photo/2016/10/22/20/55/makeup-brushes-1761648__340.jpg" class="article-image" />
+                  </div>
+                  <div class="category-circle fashion">
+                    <svg viewBox="0 0 100 100" width="120" height="120">
+                      <defs>
+                        <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
+                      </defs>
+                      <text>
+                        <textPath xlink:href="#circle">FASHION</textPath>
+                      </text>
+                    </svg>
+                  </div>
+                </a>
+                <div class="article-desc-field match-height">
+                  <div class="desc-inner">
+                    <label class="tags primary-tag">
+                      <a href="#">Primary Tag</a>
+                    </label>
+                    <h2 class="article-title">
+                      <a href="#">Card C : Article Title</a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article Card -->
+            <article class="article flex-item card-type-d">
+              <div class="article-inner">
+                <a href="#" class="article-image-field">
+                  <div class="image-container">
+                    <img src="https://cdn.pixabay.com/photo/2017/03/30/18/17/girl-2189247__340.jpg" class="article-image" />
+                  </div>
+                  <div class="category-circle fashion">
+                    <svg viewBox="0 0 100 100" width="120" height="120">
+                      <defs>
+                        <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
+                      </defs>
+                      <text>
+                        <textPath xlink:href="#circle">FASHION</textPath>
+                      </text>
+                    </svg>
+                  </div>
+                </a>
+                <div class="article-desc-field match-height">
+                  <div class="desc-inner">
+                    <label class="tags primary-tag">
+                      <a href="#">Primary Tag</a>
+                    </label>
+                    <h2 class="article-title">
+                      <a href="#">Card D : Article Title Here: Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec enim erostristique et sollicitudin acporta ac elit.</a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article Card -->
+            <article class="article flex-item card-type-b">
+              <div class="article-inner">
+                <a href="#" class="article-image-field">
+                  <div class="image-container">
+                    <img src="https://cdn.pixabay.com/photo/2015/05/31/13/29/lipstick-791761__480.jpg" class="article-image" />
+                  </div>
+                  <div class="category-circle beauty">
+                    <svg viewBox="0 0 100 100" width="120" height="120">
+                      <defs>
+                        <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
+                      </defs>
+                      <text>
+                        <textPath xlink:href="#circle">BEAUTY</textPath>
+                      </text>
+                    </svg>
+                  </div>
+                </a>
+                <div class="article-desc-field match-height">
+                  <div class="desc-inner">
+                    <label class="tags primary-tag">
+                      <a href="#">Primary Tag</a>
+                    </label>
+                    <h2 class="article-title">
+                      <a href="#">Card B : Article Title Here: Beauty ipsum dolor sit amet consectetur adipiscing elit. Donec enim erostristique et sollicitudin acporta ac elit.</a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article Card -->
+            <article class="article flex-item card-type-c">
+              <div class="article-inner">
+                <a href="#" class="article-image-field">
+                  <div class="image-container">
+                    <img src="https://cdn.pixabay.com/photo/2014/07/31/22/50/photographer-407068__480.jpg" class="article-image" />
+                  </div>
+                  <div class="category-circle fashion">
+                    <svg viewBox="0 0 100 100" width="120" height="120">
+                      <defs>
+                        <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
+                      </defs>
+                      <text>
+                        <textPath xlink:href="#circle">FASHION</textPath>
+                      </text>
+                    </svg>
+                  </div>
+                </a>
+                <div class="article-desc-field match-height">
+                  <div class="desc-inner">
+                    <label class="tags primary-tag">
+                      <a href="#">Primary Tag</a>
+                    </label>
+                    <h2 class="article-title">
+                      <a href="#">Card C : Article Title Here: Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec enim erostristique et sollicitudin acporta ac elit.</a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article Card -->
+            <article class="article flex-item card-type-d">
+              <div class="article-inner">
+                <a href="#" class="article-image-field">
+                  <div class="image-container">
+                    <img src="https://cdn.pixabay.com/photo/2022/01/17/12/37/venice-6944590__480.jpg" class="article-image" />
+                  </div>
+                  <div class="category-circle fashion">
+                    <svg viewBox="0 0 100 100" width="120" height="120">
+                      <defs>
+                        <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
+                      </defs>
+                      <text>
+                        <textPath xlink:href="#circle">FASHION</textPath>
+                      </text>
+                    </svg>
+                  </div>
+                </a>
+                <div class="article-desc-field match-height">
+                  <div class="desc-inner">
+                    <label class="tags primary-tag">
+                      <a href="#">Primary Tag</a>
+                    </label>
+                    <h2 class="article-title">
+                      <a href="#">Card D : Article Title Here: Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec enim erostristique et sollicitudin acporta ac elit.</a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article Card -->
+            <article class="article flex-item card-type-a">
+              <div class="article-inner">
+                <a href="#" class="article-image-field">
+                  <div class="image-container">
+                    <img src="https://cdn.pixabay.com/photo/2015/05/03/14/40/woman-751236_1280.jpg" class="article-image" />
+                  </div>
+                  <div class="category-circle fashion">
+                    <svg viewBox="0 0 100 100" width="120" height="120">
+                      <defs>
+                        <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
+                      </defs>
+                      <text>
+                        <textPath xlink:href="#circle">FASHION</textPath>
+                      </text>
+                    </svg>
+                  </div>
+                </a>
+                <div class="article-desc-field match-height">
+                  <div class="desc-inner">
+                    <label class="tags primary-tag">
+                      <a href="#">Primary Tag</a>
+                    </label>
+                    <h2 class="article-title">
+                      <a href="#">Card A : Article Title Here: Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec enim erostristique et sollicitudin acporta ac elit.</a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article Card -->
+            <article class="article flex-item card-type-b">
+              <div class="article-inner">
+                <a href="#" class="article-image-field">
+                  <div class="image-container">
+                    <img src="https://cdn.pixabay.com/photo/2014/03/11/22/56/wellness-285587__340.jpg" class="article-image" />
+                  </div>
+                  <div class="category-circle fashion">
+                    <svg viewBox="0 0 100 100" width="120" height="120">
+                      <defs>
+                        <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
+                      </defs>
+                      <text>
+                        <textPath xlink:href="#circle">FASHION</textPath>
+                      </text>
+                    </svg>
+                  </div>
+                </a>
+                <div class="article-desc-field match-height">
+                  <div class="desc-inner">
+                    <label class="tags primary-tag">
+                      <a href="#">Primary Tag</a>
+                    </label>
+                    <h2 class="article-title">
+                      <a href="#">Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec enim erostristique et sollicitudin acporta ac elit.</a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article Card -->
+            <article class="article flex-item card-type-c">
+              <div class="article-inner">
+                <a href="#" class="article-image-field">
+                  <div class="image-container">
+                    <img src="https://cdn.pixabay.com/photo/2019/12/23/01/16/eyeshadow-4713577__340.jpg" class="article-image" />
+                  </div>
+                  <div class="category-circle fashion">
+                    <svg viewBox="0 0 100 100" width="120" height="120">
+                      <defs>
+                        <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
+                      </defs>
+                      <text>
+                        <textPath xlink:href="#circle">FASHION</textPath>
+                      </text>
+                    </svg>
+                  </div>
+                </a>
+                <div class="article-desc-field match-height">
+                  <div class="desc-inner">
+                    <label class="tags primary-tag">
+                      <a href="#">Primary Tag</a>
+                    </label>
+                    <h2 class="article-title">
+                      <a href="#">Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec enim erostristique et sollicitudin acporta ac elit.</a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article Card -->
+            <article class="article flex-item card-type-d">
+              <div class="article-inner">
+                <a href="#" class="article-image-field">
+                  <div class="image-container">
+                    <img src="https://cdn.pixabay.com/photo/2016/10/09/05/52/ballet-pose-1725207__340.jpg" class="article-image" />
+                  </div>
+                  <div class="category-circle fashion">
+                    <svg viewBox="0 0 100 100" width="120" height="120">
+                      <defs>
+                        <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
+                      </defs>
+                      <text>
+                        <textPath xlink:href="#circle">FASHION</textPath>
+                      </text>
+                    </svg>
+                  </div>
+                </a>
+                <div class="article-desc-field match-height">
+                  <div class="desc-inner">
+                    <label class="tags primary-tag">
+                      <a href="#">Primary Tag</a>
+                    </label>
+                    <h2 class="article-title">
+                      <a href="#">Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec enim erostristique et sollicitudin acporta ac elit.</a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Article Card -->
+            <article class="article flex-item card-type-a">
+              <div class="article-inner">
+                <a href="#" class="article-image-field">
+                  <div class="image-container">
+                    <img src="https://cdn.pixabay.com/photo/2016/11/16/03/37/globe-trotter-1828079__340.jpg" class="article-image" />
+                  </div>
+                  <div class="category-circle fashion">
+                    <svg viewBox="0 0 100 100" width="120" height="120">
+                      <defs>
+                        <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
+                      </defs>
+                      <text>
+                        <textPath xlink:href="#circle">FASHION</textPath>
+                      </text>
+                    </svg>
+                  </div>
+                </a>
+                <div class="article-desc-field match-height">
+                  <div class="desc-inner">
+                    <label class="tags primary-tag">
+                      <a href="#">Primary Tag</a>
+                    </label>
+                    <h2 class="article-title">
+                      <a href="#">Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec enim erostristique et sollicitudin acporta ac elit.</a>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Load More -->
+            <section class="loadmore-container">
+              <div class="load-more">
+                <p>View more stories</p>
+                <button class="btn secondary sm" type="button" id="loadMore">Load More</button>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer // Start -->
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-content">
+          <!-- Social Network Links -->
+          <div class="nav-panel-menu sn-link-container">
+            <p>Follow us on</p>
+            <div class="sn-link-wrapper">
+              <a href="#" class="sn-link">
+                <span class="ico-sn-instagram size-36 c-white"><!--icon--></span>
+              </a>
+              <a href="#" class="sn-link">
+                <span class="ico-sn-tiktok size-36 c-white"><!--icon--></span>
+              </a>
+            </div>
+          </div>
+          <!-- Primary Menu -->
+          <ul class="nav-panel-menu primary-menu-container">
+            <li class="primary-menu">
+              <a href="#" class="menu-link">Fashion</a>
+            </li>
+            <li class="primary-menu">
+              <a href="#" class="menu-link">Beauty</a>
+            </li>
+            <li class="primary-menu">
+              <a href="#" class="menu-link">Living</a>
+            </li>
+          </ul>
+          <!-- Secondary Menu -->
+          <ul class="nav-panel-menu secondary-menu-container">
+            <li class="secondary-menu">
+              <a href="#" class="menu-link">About Eliza</a>
+            </li>
+            <li class="secondary-menu">
+              <a href="#" class="menu-link">Contact Us</a>
+            </li>
+            <li class="secondary-menu">
+              <a href="#" class="menu-link">Terms and Conditions</a>
+            </li>
+            <li class="secondary-menu">
+              <a href="#" class="menu-link">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-copyright">© <a href="#">2022 Eliza</a>. All Rights Reserved</div>
+      </div>
+    </footer>
+    <!-- Footer // End -->
+
+    <!-- JQuery Import -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap JS Import -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="/assets/scripts/App.js"></script>
+  </body>
+</html>

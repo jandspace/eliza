@@ -1,0 +1,133 @@
+/* EX
+@mixin sm-min {
+	padding: 0;
+}
+*/
+/* XS - Extra Small Devices - - - - - - - - - - - - - - - */
+@define-mixin xs {
+  @media (min-width: 0px) {
+    @mixin-content;
+  }
+}
+@define-mixin xs-max {
+  @media (max-width: 575px) {
+    @mixin-content;
+  }
+}
+@define-mixin xs-only {
+  @media (min-width: 0px) and (max-width: 575px) {
+    @mixin-content;
+  }
+}
+
+/* SM - Small Devices - - - - - - - - - - - - - - - */
+@define-mixin sm {
+  @media (min-width: 576px) {
+    @mixin-content;
+  }
+}
+@define-mixin sm-max {
+  @media (max-width: 767px) {
+    @mixin-content;
+  }
+}
+@define-mixin sm-only {
+  @media (min-width: 576px) and (max-width: 767px) {
+    @mixin-content;
+  }
+}
+
+/* MD - Medium Devices - - - - - - - - - - - - - - - */
+@define-mixin md {
+  @media (min-width: 768px) {
+    @mixin-content;
+  }
+}
+@define-mixin md-max {
+  @media (max-width: 991px) {
+    @mixin-content;
+  }
+}
+@define-mixin md-only {
+  @media (min-width: 768px) and (max-width: 991px) {
+    @mixin-content;
+  }
+}
+
+/* LG - Large Devices - - - - - - - - - - - - - - - */
+@define-mixin lg {
+  @media (min-width: 992px) {
+    @mixin-content;
+  }
+}
+@define-mixin lg-max {
+  @media (max-width: 1199px) {
+    @mixin-content;
+  }
+}
+@define-mixin lg-only {
+  @media (min-width: 992px) and (max-width: 1199px) {
+    @mixin-content;
+  }
+}
+
+/* XL - Extra Large Devices - - - - - - - - - - - - - - - */
+@define-mixin xl {
+  @media (min-width: 1200px) {
+    @mixin-content;
+  }
+}
+@define-mixin xl-max {
+  @media (max-width: 1199px) {
+    @mixin-content;
+  }
+}
+@define-mixin xl-only {
+  @media (min-width: 1200px) and (max-width: 1399px) {
+    @mixin-content;
+  }
+}
+
+/* XXL - Extra Large Devices - - - - - - - - - - - - - - - */
+@define-mixin xxl {
+  @media (min-width: 1400px) {
+    @mixin-content;
+  }
+}
+
+/* Retina - - - - - - - - - - - - - - - */
+@define-mixin all-Retina {
+  @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@define-mixin centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+@define-mixin centeredY {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+
+@define-mixin centeredX {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}

@@ -1,0 +1,55 @@
+.tag-container {
+  padding: 15px;
+  margin-bottom: 1rem;
+
+  @mixin md {
+    padding: 15px 30px;
+  }
+
+  .title-container {
+    display: inline-block;
+    padding: 0.5rem 0;
+    border-top: 1px solid $color-black10;
+    .title {
+      font-family: $san-serif;
+      font-size: $font-size-sm;
+      font-weight: $font-light;
+      color: $color-black80;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .tag-collection {
+    margin: 0 -3px;
+    padding: 0;
+    list-style: none;
+
+    .tag-item {
+      display: inline-block;
+      margin: 3px 1px;
+    }
+  }
+}
+
+.tag {
+  display: inline-block;
+  padding: 9px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  font-size: $font-size-xs;
+  font-weight: $font-light;
+  line-height: $line-height-none;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: $color-pampas;
+
+  &:hover,
+  &:focus {
+    color: $color-black;
+    text-decoration: none;
+    border: 1px solid $color-black10;
+    background-color: $color-white;
+    transform: scale(1.2);
+    box-shadow: 0 0 12px -4px rgba(0, 0, 0, 0.25);
+  }
+}

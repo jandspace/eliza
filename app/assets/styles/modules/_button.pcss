@@ -1,0 +1,120 @@
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1.2;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  color: $color-white;
+  background-color: $color-black;
+  border: 1px solid transparent;
+  padding: 12px 18px;
+  border-radius: 9999px;
+
+  &.reverse {
+    color: $color-black;
+    background-color: $color-white;
+  }
+
+  &.secondary {
+    color: $color-black;
+    background-color: transparent;
+    border: 1px solid $color-black40;
+    &.reverse {
+      color: $color-white;
+      border: 1px solid $color-white;
+    }
+  }
+
+  &.sm {
+    font-size: 12px;
+    padding: 8px 12px;
+
+    &.icon-only {
+      padding: 12px;
+      border-radius: 100%;
+      [class*="ico-"] {
+        margin: 0;
+      }
+    }
+
+    [class*="ico-"] {
+      margin: 0 4px 0 0;
+    }
+    .btn-text + [class*="ico-"] {
+      margin: 0 0 0 4px;
+    }
+  }
+
+  &.md {
+    font-size: 14px;
+    padding: 12px 18px;
+
+    &.icon-only {
+      padding: 14px;
+      border-radius: 100%;
+      [class*="ico-"] {
+        margin: 0;
+      }
+    }
+
+    [class*="ico-"] {
+      margin: 0 6px 0 0;
+    }
+    .btn-text + [class*="ico-"] {
+      margin: 0 0 0 6px;
+    }
+  }
+
+  &.lg {
+    font-size: 16px;
+    padding: 16px 24px;
+
+    &.icon-only {
+      padding: 16px;
+      border-radius: 100%;
+      [class*="ico-"] {
+        margin: 0;
+      }
+    }
+
+    [class*="ico-"] {
+      margin: 0 6px 0 0;
+    }
+    .btn-text + [class*="ico-"] {
+      margin: 0 0 0 8px;
+    }
+  }
+
+  [class*="ico-"] {
+    vertical-align: -2px;
+  }
+
+  &:not(.reverse):not(.secondary) {
+    [class*="ico-"] {
+      filter: invert(98%) sepia(91%) saturate(0%) hue-rotate(350deg) brightness(103%) contrast(102%);
+    }
+
+    &:hover,
+    &:focus {
+      border: 1px solid $color-black40;
+      background-color: $color-white;
+      color: $color-black;
+      box-shadow: none;
+      [class*="ico-"] {
+        filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(313deg) brightness(93%) contrast(107%);
+      }
+    }
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: unset;
+  }
+}

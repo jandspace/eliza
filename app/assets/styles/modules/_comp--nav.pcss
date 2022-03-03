@@ -1,0 +1,85 @@
+.nav-container {
+  background-color: $color-black;
+  width: 100%;
+  .offcanvas-header,
+  .offcanvas-body {
+    width: 100%;
+    max-width: 642px;
+    margin: 0 auto;
+  }
+  .offcanvas-header {
+    .home-btn {
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      font-weight: $font-light;
+    }
+    .btn-close {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e");
+      opacity: 0.75;
+    }
+  }
+  .offcanvas-body {
+    @mixin md {
+      padding-top: 6vh;
+    }
+
+    .offcanvas-content {
+      * {
+        color: $color-white;
+      }
+      .nav-panel-menu {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        &.primary-menu-container {
+          padding-bottom: 1rem;
+          .primary-menu {
+            text-align: center;
+            padding: 1rem 0;
+            .menu-link {
+              font-family: $serif;
+              font-size: clamp(24px, 6vw, 32px);
+              text-decoration: none;
+
+              &:hover,
+              &:focus {
+                color: $color-khaki;
+              }
+            }
+          }
+        }
+
+        &.secondary-menu-container {
+          padding-bottom: 3rem;
+          .secondary-menu {
+            text-align: center;
+            padding: 0.5rem 0;
+            .menu-link {
+              font-weight: $font-light;
+              font-size: clamp(14px, 3vw, 16px);
+              text-decoration: none;
+              opacity: 0.6;
+
+              &:hover,
+              &:focus {
+                color: $color-khaki;
+              }
+            }
+          }
+        }
+
+        &.sn-link-container {
+          text-align: center;
+          .sn-link-wrapper {
+            .sn-link {
+              display: inline-block;
+              [class*="ico-"] {
+                margin: 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

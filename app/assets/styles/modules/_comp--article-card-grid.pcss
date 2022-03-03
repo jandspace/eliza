@@ -1,0 +1,202 @@
+.article-grid {
+  .article {
+    padding: 15px;
+    margin-bottom: 30px;
+    .article-inner {
+      position: relative;
+      .article-image-field {
+        position: relative;
+        border-radius: 18px;
+        overflow: hidden;
+        z-index: 4;
+
+        .image-container {
+          position: relative;
+          padding-top: 125%;
+
+          .article-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform-origin: center top;
+            transition: all 0.3s ease;
+          }
+        }
+        .category-circle {
+          display: none;
+          position: absolute;
+          width: 100px;
+          height: 50px;
+          left: calc(50% - 50px);
+          bottom: 0;
+          overflow: hidden;
+          text {
+            font-size: 16px;
+            letter-spacing: 0.2em;
+            opacity: 0.6;
+          }
+          svg {
+            background: white;
+            padding: 10px;
+            border-radius: 50%;
+            fill: currentColor;
+            height: auto;
+            max-width: 66vmin;
+            transform-origin: center;
+            width: 100%;
+            letter-spacing: 0.1em;
+          }
+          &.fashion {
+            svg {
+              transform: rotate(024deg);
+            }
+          }
+          &.beauty {
+            svg {
+              transform: rotate(032deg);
+            }
+          }
+        }
+      }
+      .article-desc-field {
+        position: relative;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        z-index: 5;
+
+        .desc-inner {
+          padding: 0;
+        }
+        .tags {
+          font-size: $font-size-xxs;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          margin-bottom: 10px;
+          a {
+            &:hover {
+              text-decoration: underline;
+              text-underline-offset: 3px;
+            }
+          }
+        }
+        .article-title {
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          margin: 0;
+          font-size: $font-size-lg4;
+          @mixin md {
+            font-size: $font-size-lg5;
+          }
+        }
+      }
+
+      a {
+        display: block;
+        &:hover,
+        &:focus {
+          text-decoration: none;
+        }
+        .category-circle {
+          color: $color-black;
+        }
+      }
+
+      &:hover,
+      &:focus {
+        .article-title {
+          a {
+            color: $color-khaki;
+          }
+        }
+        .category-circle {
+          color: $color-black;
+        }
+        .image-container {
+          .article-image {
+            transform: scale(1.2);
+            transition: all 3s ease;
+          }
+        }
+      }
+    }
+
+    &.card-type-a {
+    }
+
+    &.card-type-b {
+      .article-image-field {
+        .category-circle {
+          display: block;
+        }
+      }
+    }
+
+    &.card-type-c {
+      .article-inner {
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          background-color: $color-black;
+        }
+
+        .article-image-field {
+          position: relative;
+          border-radius: unset;
+          .image-container {
+            position: relative;
+            &::after {
+              content: "";
+              display: block;
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              height: 50%;
+              z-index: 1;
+              background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+            }
+          }
+        }
+        .article-desc-field {
+          .desc-inner {
+            position: absolute;
+            background: $color-white;
+            width: calc(100% - 30px);
+            margin: 0 15px;
+            bottom: 0;
+            z-index: 2;
+            padding: 15px 15px;
+            border-radius: 18px 18px 0 0;
+          }
+        }
+      }
+    }
+
+    &.card-type-d {
+      .article-inner {
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          left: -15px;
+          bottom: -15px;
+          width: calc(100% + 30px);
+          height: 90%;
+          z-index: 1;
+          background-color: $color-oat;
+        }
+      }
+    }
+  }
+}

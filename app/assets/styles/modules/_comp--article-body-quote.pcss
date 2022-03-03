@@ -1,0 +1,30 @@
+.article-pull-quote {
+  .pull-quote {
+    position: relative;
+    padding: 36px 30px 30px;
+    [class*="ico-"] {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .pull-quote-container {
+      * {
+        font-family: $serif;
+        font-size: $font-size-xl;
+        font-weight: $font-normal;
+        font-style: italic;
+        color: $color-black;
+      }
+    }
+
+    .pull-quote-name {
+      text-align: right;
+      font-size: $font-size-md;
+      color: $color-black60;
+      &:before {
+        content: "-";
+      }
+    }
+  }
+}

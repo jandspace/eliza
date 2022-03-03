@@ -1,0 +1,68 @@
+.header {
+  min-height: 52px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
+  z-index: 19;
+  .flex-container {
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    max-width: 642px;
+    margin: 0 auto;
+    .flex-item {
+      min-width: 1px;
+      padding: 6px;
+      &.l-fn {
+        flex: 0 0 25%;
+        max-width: 25%;
+      }
+      &.c-fn {
+        flex: 0 0 50%;
+        max-width: 50%;
+        .logo {
+          a {
+            display: block;
+            text-align: center;
+            .eliza-logo {
+              display: inline-block;
+              height: 40px;
+            }
+          }
+        }
+      }
+      &.r-fn {
+        flex: 0 0 25%;
+        max-width: 25%;
+      }
+    }
+  }
+
+  .main-nav {
+    display: flex;
+    align-items: center;
+    .nav-trigger {
+      display: inline-block;
+      padding: 9px;
+      line-height: 0;
+      .nav-button {
+        display: block;
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+
+  .progress-bar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 4px;
+    border-radius: unset;
+    background-color: $color-khaki;
+    transition: all linear 0.1s;
+    min-width: 0.1%;
+  }
+}

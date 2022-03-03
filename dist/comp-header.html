@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <title>Eliza - comp-header</title>
+    <!-- Bootstrap CSS Import -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    
+  </head>
+
+  <body>
+    <!-- Eliza Header-->
+    <header class="header global-header">
+      <div class="flex-container">
+        <div class="flex-item l-fn">
+          <nav class="main-nav">
+            <a class="nav-trigger" data-bs-toggle="offcanvas" href="#mainnav" role="button" aria-controls="mainnav">
+              <span class="ico-menu size-18 c-black"><!--icon--></span>
+            </a>
+          </nav>
+        </div>
+        <div class="flex-item c-fn">
+          <div class="logo">
+            <a href=""><img src="http://jandspace.com/wp-content/uploads/2022/02/logo-eliza.svg" class="eliza-logo" /></a>
+          </div>
+        </div>
+        <div class="flex-item r-fn"></div>
+      </div>
+    </header>
+    <div class="nav-container offcanvas offcanvas-start" tabindex="-1" id="mainnav" aria-labelledby="mainnavLabel">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="home-button-container">
+          <a href="" class="btn secondary reverse sm home-btn">Home</a>
+        </div>
+      </div>
+      <div class="offcanvas-body">
+        <div class="offcanvas-content">
+          <ul class="nav-panel-menu primary-menu-container">
+            <li class="primary-menu">
+              <a href="#" class="menu-link">Fashion</a>
+            </li>
+            <li class="primary-menu">
+              <a href="#" class="menu-link">Beauty</a>
+            </li>
+            <li class="primary-menu">
+              <a href="#" class="menu-link">Living</a>
+            </li>
+          </ul>
+          <ul class="nav-panel-menu secondary-menu-container">
+            <li class="secondary-menu">
+              <a href="#" class="menu-link">About Eliza</a>
+            </li>
+            <li class="secondary-menu">
+              <a href="#" class="menu-link">Contact Us</a>
+            </li>
+            <li class="secondary-menu">
+              <a href="#" class="menu-link">Terms and Conditions</a>
+            </li>
+            <li class="secondary-menu">
+              <a href="#" class="menu-link">Privacy Policy</a>
+            </li>
+          </ul>
+          <div class="nav-panel-menu sn-link-container">
+            <p>Follow us on</p>
+            <div class="sn-link-wrapper">
+              <a href="#" class="sn-link">
+                <span class="ico-sn-instagram size-36 c-white"><!--icon--></span>
+              </a>
+              <a href="#" class="sn-link">
+                <span class="ico-sn-tiktok size-36 c-white"><!--icon--></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JQuery Import -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap JS Import -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="/assets/scripts/App.js"></script>
+  </body>
+</html>

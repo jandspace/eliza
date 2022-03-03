@@ -1,0 +1,23 @@
+.article-breadcrumb {
+  max-width: clamp(578px, 90vw, 642px);
+  margin: 0 auto;
+  padding: 10px 10px 2px;
+
+  a,
+  span {
+    display: inline-block;
+    padding: 5px;
+    letter-spacing: 0.05em;
+    font-size: $font-size-xxs;
+    text-transform: uppercase;
+    &.category-link {
+      font-weight: $font-semi;
+    }
+    &.tag-link {
+      color: $color-black60;
+    }
+    &.divider {
+      color: $color-black20;
+    }
+  }
+}

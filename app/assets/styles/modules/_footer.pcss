@@ -1,0 +1,101 @@
+.footer {
+  background-color: $color-black;
+  width: 100%;
+  .footer-wrapper {
+    width: 100%;
+    max-width: 642px;
+    margin: 0 auto;
+    padding: 30px 0 0 0;
+
+    * {
+      color: $color-white;
+    }
+
+    .footer-content {
+      ul {
+        margin: 0;
+        padding: 0 15px;
+        list-style: none;
+      }
+
+      .sn-link-container {
+        text-align: center;
+        padding-bottom: 1rem;
+        p {
+          font-size: 16px;
+        }
+
+        .sn-link-wrapper {
+          .sn-link {
+            display: inline-block;
+            [class*="ico-"] {
+              margin: 6px;
+            }
+          }
+        }
+      }
+
+      .primary-menu-container {
+        padding-bottom: 1rem;
+        .primary-menu {
+          .menu-link {
+            display: block;
+            font-family: $serif;
+            font-size: 24px;
+            text-decoration: none;
+            padding: 0.5rem 0;
+
+            &:hover,
+            &:focus {
+              color: $color-khaki;
+            }
+          }
+        }
+        @mixin md {
+          text-align: center;
+          .primary-menu {
+            display: inline-block;
+
+            .menu-link {
+              padding: 15px;
+            }
+          }
+        }
+      }
+
+      .secondary-menu-container {
+        padding-bottom: 3rem;
+        .secondary-menu {
+          padding: 0.5rem 0;
+          .menu-link {
+            font-weight: $font-light;
+            font-size: 14px;
+            text-decoration: none;
+            opacity: 0.6;
+
+            &:hover,
+            &:focus {
+              color: $color-khaki;
+            }
+          }
+        }
+        @mixin md {
+          text-align: center;
+          .secondary-menu {
+            display: inline-block;
+            .menu-link {
+              padding: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-copyright {
+      padding: 1rem 15px 30px;
+      text-align: center;
+      font-size: $font-size-xxs;
+      opacity: 0.5;
+    }
+  }
+}
