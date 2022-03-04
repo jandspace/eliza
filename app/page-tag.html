@@ -4,16 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <title>Eliza - comp-header</title>
+    <title>Eliza - page-tag</title>
     <!-- Bootstrap CSS Import -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
     <!-- build:css /assets/styles/* -->
-    <link rel="stylesheet" href="/temp/styles/styles.css" />
+    <link rel="stylesheet" href="temp/styles/styles.css" />
     <!-- endbuild -->
   </head>
 
-  <body>
+  <body class="page-tag">
     <!-- Eliza Header-->
     <header class="header global-header">
       <div class="flex-container">
@@ -55,13 +55,13 @@
         <div class="offcanvas-content">
           <ul class="nav-panel-menu primary-menu-container">
             <li class="primary-menu">
-              <a href="page-category.html" class="menu-link">Fashion</a>
+              <a href="#" class="menu-link">Fashion</a>
             </li>
             <li class="primary-menu">
-              <a href="page-category.html" class="menu-link">Beauty</a>
+              <a href="#" class="menu-link">Beauty</a>
             </li>
             <li class="primary-menu">
-              <a href="page-category.html" class="menu-link">Living</a>
+              <a href="#" class="menu-link">Living</a>
             </li>
           </ul>
           <ul class="nav-panel-menu secondary-menu-container">
@@ -94,12 +94,73 @@
       </div>
     </div>
 
+    <main class="main">
+      <!-- comp-article-breadcrumb -->
+      <div class="component article-breadcrumb">
+        <a href="#" class="category-link">Home</a>
+        <span class="divider">|</span>
+        <a href="#" class="tag-link disabled">Tag</a>
+      </div>
+      <div class="main-wrapper">
+        <div style="min-height: 480px; display: flex; align-items: center; justify-content: center; color: #aaa; text-align: center">\<br />Tag Page<br />\</div>
+      </div>
+    </main>
+
+    <!-- Footer // Start -->
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-content">
+          <!-- Social Network Links -->
+          <div class="nav-panel-menu sn-link-container">
+            <p>Follow us on</p>
+            <div class="sn-link-wrapper">
+              <a href="#" class="sn-link">
+                <span class="ico-sn-instagram size-36 c-white"><!--icon--></span>
+              </a>
+              <a href="#" class="sn-link">
+                <span class="ico-sn-tiktok size-36 c-white"><!--icon--></span>
+              </a>
+            </div>
+          </div>
+          <!-- Primary Menu -->
+          <ul class="nav-panel-menu primary-menu-container">
+            <li class="primary-menu">
+              <a href="page-category.html" class="menu-link">Fashion</a>
+            </li>
+            <li class="primary-menu">
+              <a href="page-category.html" class="menu-link">Beauty</a>
+            </li>
+            <li class="primary-menu">
+              <a href="page-category.html" class="menu-link">Living</a>
+            </li>
+          </ul>
+          <!-- Secondary Menu -->
+          <ul class="nav-panel-menu secondary-menu-container">
+            <li class="secondary-menu">
+              <a href="#" class="menu-link">About Eliza</a>
+            </li>
+            <li class="secondary-menu">
+              <a href="#" class="menu-link">Contact Us</a>
+            </li>
+            <li class="secondary-menu">
+              <a href="#" class="menu-link">Terms and Conditions</a>
+            </li>
+            <li class="secondary-menu">
+              <a href="#" class="menu-link">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-copyright">© <a href="#">2022 Eliza</a>. All Rights Reserved</div>
+      </div>
+    </footer>
+    <!-- Footer // End -->
+
     <!-- JQuery Import -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Bootstrap JS Import -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <!-- build:js /assets/scripts/App.js -->
-    <script src="/temp/scripts/App.js"></script>
+    <script src="temp/scripts/App.js"></script>
     <!-- endbuild -->
   </body>
 </html>

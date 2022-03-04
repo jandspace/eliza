@@ -23,21 +23,44 @@ body {
 
 h1 {
   font-size: clamp($font-size-lg6, 7.5vw, $font-size-lg7);
+  margin-bottom: 1.2rem;
 }
 h2 {
   font-size: clamp($font-size-lg5, 5.5vw, $font-size-lg6);
+  margin-bottom: 1rem;
 }
 h3 {
   font-size: clamp($font-size-lg4, 5vw, $font-size-lg5);
+  margin-bottom: 1rem;
 }
 h4 {
   font-size: 20px;
+  margin-bottom: 0.75rem;
 }
 h5 {
   font-size: 18px;
+  margin-bottom: 0.75rem;
 }
 h6 {
   font-size: 16px;
+  margin-bottom: 0.75rem;
+}
+
+p,
+li {
+  color: $color-black80;
+  font-size: $font-size-md;
+  a {
+    font-weight: $font-normal;
+    text-decoration: underline;
+    text-decoration-color: $color-black20;
+    text-underline-offset: 2px;
+    &:hover,
+    &:focus {
+      color: $color-khaki;
+      text-decoration: underline;
+    }
+  }
 }
 
 /* Font Size */

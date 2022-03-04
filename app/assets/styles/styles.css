@@ -5,14 +5,15 @@
 @import "base/_typography.pcss";
 @import "base/_icon.pcss";
 
-/* MODULE */
+/* MODULE & COMPONENTS */
 @import "modules/_global.pcss";
 @import "modules/_layout.pcss";
 @import "modules/_button.pcss";
 @import "modules/_media.pcss";
-@import "modules/_header.pcss";
-@import "modules/_footer.pcss";
 
+/* COMPONENT */
+@import "modules/_comp--header.pcss";
+@import "modules/_comp--footer.pcss";
 @import "modules/_comp--nav.pcss";
 @import "modules/_comp--hero-carousel.pcss";
 @import "modules/_comp--article-card-grid.pcss";
@@ -32,3 +33,9 @@
 @import "modules/_comp--article-body-quote.pcss";
 @import "modules/_comp--article-body-insta-widget.pcss";
 @import "modules/_comp--related-article.pcss";
+
+/* PAGE CUSTOMISATION */
+@import "pages/_page--home.pcss";
+@import "pages/_page--article.pcss";
+@import "pages/_page--category.pcss";
+@import "pages/_page--tag.pcss";

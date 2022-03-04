@@ -12,7 +12,7 @@
 
       .article-image-field {
         position: relative;
-        border-radius: 18px;
+        border-radius: 12px;
         overflow: hidden;
         flex: 0 0 152px;
         max-width: 152px;
@@ -37,6 +37,10 @@
             transform-origin: center top;
             transition: all 0.3s ease;
           }
+        }
+
+        .category-circle {
+          display: none;
         }
       }
       .article-desc-field {
@@ -90,9 +94,6 @@
         &:focus {
           text-decoration: none;
         }
-        .category-circle {
-          color: $color-black;
-        }
       }
 
       &:hover,
@@ -102,9 +103,13 @@
             color: $color-khaki;
           }
         }
-        .category-circle {
-          color: $color-black;
-        }
+        background-color: $color-white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 24px -8px rgba(0, 0, 0, 0.2);
+        transform: scale(1.06);
+        transition: all 0.3s ease;
+        z-index: 9;
       }
     }
   }
