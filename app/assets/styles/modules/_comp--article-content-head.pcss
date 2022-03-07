@@ -17,8 +17,12 @@
       margin: 0 0 1rem 0;
     }
     .article-summary {
-      font-size: $font-size-md;
       line-height: $line-height-md;
+      font-size: $font-size-md;
+
+      @mixin md {
+        font-size: $font-size-lg;
+      }
     }
   }
   .pubinfo-container {
