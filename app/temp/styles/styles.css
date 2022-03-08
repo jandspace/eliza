@@ -1648,22 +1648,22 @@ label {
         .article-list .article .article-inner a:focus {
           text-decoration: none;
         }
-.article-list .article .article-inner:hover,
-      .article-list .article .article-inner:focus {
-        background-color: #ffffff;
-        border-radius: 12px;
-        overflow: hidden;
-        -webkit-box-shadow: 0 4px 24px -8px rgba(0, 0, 0, 0.2);
-                box-shadow: 0 4px 24px -8px rgba(0, 0, 0, 0.2);
-        -webkit-transform: scale(1.06);
-                transform: scale(1.06);
-        -webkit-transition: all 0.3s ease;
-        transition: all 0.3s ease;
-        z-index: 9;
-      }
-.article-list .article .article-inner:hover .article-title a, .article-list .article .article-inner:focus .article-title a {
-            color: #baac74;
-          }
+.article-list .article:hover,
+    .article-list .article:focus {
+      background-color: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      -webkit-box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+              box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+      -webkit-transform: scale(1.025);
+              transform: scale(1.025);
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      z-index: 9;
+    }
+.article-list .article:hover .article-title a, .article-list .article:focus .article-title a {
+          color: #baac74;
+        }
 .image-gallery {
   position: relative;
   -webkit-box-flex: 0;
