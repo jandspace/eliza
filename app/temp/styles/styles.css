@@ -597,13 +597,27 @@ p a:hover,
 /* MODULE & COMPONENTS */
 /* This file contains very basic styles. */
 body {
-  background-color: #f7f7f7;
   color: #333333;
   font-size: 1rem;
   line-height: 1.5;
   margin: 0;
   padding: 0;
+  background-color: #ffffff;
 }
+@media (min-width: 576px) {
+body {
+    background-color: #f7f7f7
+}
+  }
+*::-webkit-scrollbar {
+    display: none;
+  }
+*::-moz-selection {
+    background-color: #fddae6;
+  }
+*::selection {
+    background-color: #fddae6;
+  }
 .container {
   width: 100%;
   max-width: 640px;
@@ -2226,6 +2240,38 @@ label {
     -webkit-box-shadow: 0 0 12px -4px rgba(0, 0, 0, 0.25);
             box-shadow: 0 0 12px -4px rgba(0, 0, 0, 0.25);
   }
+.selected-tag {
+  padding: 15px;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+.selected-tag {
+    padding: 15px 30px
+}
+  }
+.selected-tag .title-container {
+    border: none;
+  }
+.selected-tag .title-container .title {
+      margin-bottom: 10px;
+    }
+.selected-tag .tag-collection {
+    margin: 0 -30px;
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+.selected-tag .tag-collection li:first-child {
+        margin-left: 30px;
+      }
+.selected-tag .tag-collection .tag-item {
+      display: inline-block;
+      margin: 3px 1px;
+    }
 .article-breadcrumb {
   max-width: clamp(578px, 90vw, 642px);
   margin: 0 auto;
@@ -2509,6 +2555,28 @@ label {
 .related-article .title-container {
     padding: 0 15px;
     text-align: center;
+  }
+.category-content-head {
+  position: relative;
+  padding: 15px;
+}
+@media (min-width: 768px) {
+.category-content-head {
+    padding: 30px
+}
+  }
+.category-content-head .content-container .category-title {
+      margin: 0 0 10px 0;
+    }
+.category-content-head .content-container .category-summary {
+      font-size: 16px;
+      line-height: 1.5em;
+      margin: 0;
+    }
+@media (min-width: 768px) {
+.category-content-head .content-container .category-summary {
+        font-size: 18px
+    }
   }
 /* PAGE CUSTOMISATION */
 body.page-home {

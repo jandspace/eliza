@@ -1,0 +1,20 @@
+.category-content-head {
+  position: relative;
+  padding: 15px;
+  @mixin md {
+    padding: 30px;
+  }
+  .content-container {
+    .category-title {
+      margin: 0 0 10px 0;
+    }
+    .category-summary {
+      font-size: $font-size-md;
+      line-height: $line-height-md;
+      margin: 0;
+      @mixin md {
+        font-size: $font-size-lg;
+      }
+    }
+  }
+}

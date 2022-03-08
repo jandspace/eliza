@@ -24,6 +24,7 @@
 @import "modules/_comp--single-product.pcss";
 @import "modules/_comp--loadmore.pcss";
 @import "modules/_comp--tag-container.pcss";
+@import "modules/_comp--tag-container-selected.pcss";
 @import "modules/_comp--article-breadcrumb.pcss";
 @import "modules/_comp--article-content-head.pcss";
 @import "modules/_comp--article-content-share.pcss";
@@ -33,6 +34,8 @@
 @import "modules/_comp--article-body-quote.pcss";
 @import "modules/_comp--article-body-insta-widget.pcss";
 @import "modules/_comp--related-article.pcss";
+
+@import "modules/_comp--category-content-head.pcss";
 
 /* PAGE CUSTOMISATION */
 @import "pages/_page--home.pcss";
