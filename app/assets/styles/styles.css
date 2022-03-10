@@ -18,6 +18,7 @@
 @import "modules/_comp--hero-carousel.pcss";
 @import "modules/_comp--article-card-grid.pcss";
 @import "modules/_comp--article-card-list.pcss";
+@import "modules/_comp--article-card-combi.pcss";
 @import "modules/_comp--image-gallery.pcss";
 @import "modules/_comp--image-gallery-modal.pcss";
 @import "modules/_comp--product-gallery.pcss";
@@ -36,6 +37,7 @@
 @import "modules/_comp--related-article.pcss";
 
 @import "modules/_comp--category-content-head.pcss";
+@import "modules/_comp--tag-content-head.pcss";
 
 /* PAGE CUSTOMISATION */
 @import "pages/_page--home.pcss";

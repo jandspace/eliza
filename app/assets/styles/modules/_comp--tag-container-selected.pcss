@@ -1,4 +1,4 @@
-.selected-tag {
+.selected-tag-container {
   padding: 15px;
   margin-bottom: 1rem;
 
@@ -14,7 +14,7 @@
   }
 
   .tag-collection {
-    margin: 0 -30px;
+    margin: 0 -15px;
     padding: 0;
     list-style: none;
     white-space: nowrap;
@@ -23,9 +23,22 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
 
+    @mixin md {
+      margin: 0 -30px;
+    }
+
     li {
       &:first-child {
-        margin-left: 30px;
+        margin-left: 15px;
+        @mixin md {
+          margin-left: 30px;
+        }
+      }
+      &:last-child {
+        margin-right: 15px;
+        @mixin md {
+          margin-right: 30px;
+        }
       }
     }
 

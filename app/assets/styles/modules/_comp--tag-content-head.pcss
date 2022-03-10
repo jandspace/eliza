@@ -1,0 +1,40 @@
+.tag-content-head {
+  position: relative;
+  padding: 15px;
+  @mixin md {
+    padding: 30px;
+  }
+  .content-container {
+    .tag-title {
+      margin: 0 0 15px 0;
+
+      .tag {
+        display: inline-block;
+        padding: 12px 24px;
+        border: 1px solid transparent;
+        border-radius: 10px;
+        font-family: Sofia Pro, sans-serif;
+        font-size: clamp($font-size-lg4, 5vw, $font-size-lg5);
+        font-weight: $font-normal;
+        line-height: $line-height-none;
+        text-decoration: none;
+        text-transform: capitalize;
+        background-color: $color-pampas;
+
+        &:hover,
+        &:focus {
+          box-shadow: none;
+          transform: none;
+        }
+      }
+    }
+    .tag-summary {
+      font-size: $font-size-md;
+      line-height: $line-height-md;
+      margin: 0;
+      @mixin md {
+        font-size: $font-size-lg;
+      }
+    }
+  }
+}
