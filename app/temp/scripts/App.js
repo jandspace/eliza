@@ -163,7 +163,7 @@ $(document).on("scroll", function () {
 
 $(document).ready(function () {
   $("#Article-Container .article-group > .article").slice(0, 15).show();
-  $("#loadMore").on("click", function (e) {
+  $("#Article-Container #loadMore").on("click", function (e) {
     e.preventDefault();
     $("#Article-Container .article-group > .article:hidden").slice(0, 15).slideDown();
     if ($("#Article-Container .article-group > .article:hidden").length == 0) {
@@ -174,10 +174,10 @@ $(document).ready(function () {
 
 //Related Article
 $(document).ready(function () {
-  $("#Realted-Article .article-group > .article").slice(0, 4).show();
+  $("#Realted-Article .article-group > .article").slice(0, 3).show();
   $("#Realted-Article #loadMore").on("click", function (e) {
     e.preventDefault();
-    $("#Realted-Article .article-group > .article:hidden").slice(0, 4).slideDown();
+    $("#Realted-Article .article-group > .article:hidden").slice(0, 3).slideDown();
     if ($("#Realted-Article .article-group > .article:hidden").length == 0) {
       $("#Realted-Article .load-more").text("No more article").addClass("no-article");
     }
