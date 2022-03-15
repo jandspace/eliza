@@ -2036,6 +2036,20 @@ label {
                 color: #999999;
                 font-style: italic;
               }
+.modal.fade.modal-slideup .modal-dialog .modal-content .modal-closure {
+            text-align: center;
+            padding: 30px;
+          }
+.modal.fade.modal-slideup .modal-dialog .modal-content .modal-closure .btn {
+              background: none;
+              border-color: transparent;
+              padding: 12px;
+              opacity: 0.5;
+            }
+.modal.fade.modal-slideup .modal-dialog .modal-content .modal-closure .btn span[class*="ico-"] {
+                  -webkit-filter: unset;
+                          filter: unset;
+                }
 .modal.fade.modal-slideup.show {
         padding-top: 52px;
       }
