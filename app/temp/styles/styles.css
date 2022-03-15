@@ -2550,13 +2550,14 @@ label {
 .article-breadcrumb {
   max-width: clamp(578px, 90vw, 642px);
   margin: 0 auto;
-  padding: 10px 10px 2px;
+  padding: 15px;
 }
 .article-breadcrumb a,
   .article-breadcrumb span {
     display: inline-block;
     padding: 5px 2px;
     letter-spacing: 0.05em;
+    line-height: 1em;
     font-size: 12px;
     text-transform: uppercase;
   }
