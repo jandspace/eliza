@@ -167,7 +167,7 @@ $(document).ready(function () {
     e.preventDefault();
     $("#Article-Container .article-group > .article:hidden").slice(0, 15).slideDown();
     if ($("#Article-Container .article-group > .article:hidden").length == 0) {
-      $("#Article-Container .load-more").text("No more article").addClass("no-article");
+      $("#Article-Container .load-more").text("No more articles").addClass("no-article");
     }
   });
 });
@@ -179,7 +179,7 @@ $(document).ready(function () {
     e.preventDefault();
     $("#Realted-Article .article-group > .article:hidden").slice(0, 3).slideDown();
     if ($("#Realted-Article .article-group > .article:hidden").length == 0) {
-      $("#Realted-Article .load-more").text("No more article").addClass("no-article");
+      $("#Realted-Article .load-more").text("No more articles").addClass("no-article");
     }
   });
 });
