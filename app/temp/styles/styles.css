@@ -882,8 +882,8 @@ label {
       border: 1px solid #999999;
       background-color: #ffffff;
       color: #000000;
-      -webkit-box-shadow: none;
-              box-shadow: none;
+      -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+              box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
 .btn:not(.reverse):not(.secondary):hover [class*="ico-"], .btn:not(.reverse):not(.secondary):focus [class*="ico-"] {
         -webkit-filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(313deg) brightness(93%) contrast(107%);
@@ -1283,8 +1283,8 @@ label {
     background: black;
     z-index: 6;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    -webkit-transform: scale(1) translateY(-50%);
+            transform: scale(1) translateY(-50%);
     opacity: 0.9;
   }
 .hero-article .carousel-control-prev:hover,
@@ -1987,69 +1987,69 @@ label {
         min-width: 50%;
         text-decoration: none;
       }
-.modal.fade.modal-slideup .modal-dialog {
-        -webkit-transition: -webkit-transform 0.3s linear;
-        transition: -webkit-transform 0.3s linear;
-        transition: transform 0.3s linear;
-        transition: transform 0.3s linear, -webkit-transform 0.3s linear;
-        -webkit-transform: translate(0, 100%);
-                transform: translate(0, 100%);
-      }
-.modal.fade.modal-slideup .modal-dialog .modal-content .modal-header {
-            position: absolute;
-            top: 0;
-            right: 0;
-            padding: 0;
-            border: none;
-            -webkit-transform: translateY(-100%);
-                    transform: translateY(-100%);
-          }
-.modal.fade.modal-slideup .modal-dialog .modal-content .modal-header .btn {
-              background-color: transparent;
+.modal.fade.modal-slideup.image-gallery-modal .modal-dialog {
+          -webkit-transition: -webkit-transform 0.3s linear;
+          transition: -webkit-transform 0.3s linear;
+          transition: transform 0.3s linear;
+          transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+          -webkit-transform: translate(0, 100%);
+                  transform: translate(0, 100%);
+        }
+.modal.fade.modal-slideup.image-gallery-modal .modal-dialog .modal-content .modal-header {
+              position: absolute;
+              top: 0;
+              right: 0;
+              padding: 0;
               border: none;
-              padding: 10px;
+              -webkit-transform: translateY(-100%);
+                      transform: translateY(-100%);
             }
-.modal.fade.modal-slideup .modal-dialog .modal-content .modal-body {
-            padding: 0;
-          }
+.modal.fade.modal-slideup.image-gallery-modal .modal-dialog .modal-content .modal-header .btn {
+                background-color: transparent;
+                border: none;
+                padding: 10px;
+              }
+.modal.fade.modal-slideup.image-gallery-modal .modal-dialog .modal-content .modal-body {
+              padding: 0;
+            }
 @media (min-width: 768px) {
-.modal.fade.modal-slideup .modal-dialog .modal-content .modal-body {
-              padding: 30px 0
-          }
+.modal.fade.modal-slideup.image-gallery-modal .modal-dialog .modal-content .modal-body {
+                padding: 30px 0
+            }
   }
-.modal.fade.modal-slideup .modal-dialog .modal-content .modal-body .gallery-image-item {
-              padding: 5px;
-              max-width: 642px;
-              margin: 1rem auto;
-            }
-.modal.fade.modal-slideup .modal-dialog .modal-content .modal-body .gallery-image-item .image-container {
-                border-radius: 18px;
-                overflow: hidden;
-              }
-.modal.fade.modal-slideup .modal-dialog .modal-content .modal-body .gallery-image-item .image-container .gallery-image {
-                  width: 100%;
-                }
-.modal.fade.modal-slideup .modal-dialog .modal-content .modal-body .gallery-image-item [class*="caption"] {
-                text-align: center;
+.modal.fade.modal-slideup.image-gallery-modal .modal-dialog .modal-content .modal-body .gallery-image-item {
                 padding: 5px;
-                font-size: 12px;
-                color: #999999;
-                font-style: italic;
+                max-width: 642px;
+                margin: 1rem auto;
               }
-.modal.fade.modal-slideup .modal-dialog .modal-content .modal-closure {
-            text-align: center;
-            padding: 30px;
-          }
-.modal.fade.modal-slideup .modal-dialog .modal-content .modal-closure .btn {
-              background: none;
-              border-color: transparent;
-              padding: 12px;
-              opacity: 0.5;
-            }
-.modal.fade.modal-slideup .modal-dialog .modal-content .modal-closure .btn span[class*="ico-"] {
-                  -webkit-filter: unset;
-                          filter: unset;
+.modal.fade.modal-slideup.image-gallery-modal .modal-dialog .modal-content .modal-body .gallery-image-item .image-container {
+                  border-radius: 18px;
+                  overflow: hidden;
                 }
+.modal.fade.modal-slideup.image-gallery-modal .modal-dialog .modal-content .modal-body .gallery-image-item .image-container .gallery-image {
+                    width: 100%;
+                  }
+.modal.fade.modal-slideup.image-gallery-modal .modal-dialog .modal-content .modal-body .gallery-image-item [class*="caption"] {
+                  text-align: center;
+                  padding: 5px;
+                  font-size: 12px;
+                  color: #999999;
+                  font-style: italic;
+                }
+.modal.fade.modal-slideup.image-gallery-modal .modal-dialog .modal-content .modal-closure {
+              text-align: center;
+              padding: 30px;
+            }
+.modal.fade.modal-slideup.image-gallery-modal .modal-dialog .modal-content .modal-closure .btn {
+                background: none;
+                border-color: transparent;
+                padding: 12px;
+                opacity: 0.5;
+              }
+.modal.fade.modal-slideup.image-gallery-modal .modal-dialog .modal-content .modal-closure .btn span[class*="ico-"] {
+                    -webkit-filter: unset;
+                            filter: unset;
+                  }
 .modal.fade.modal-slideup.show {
         padding-top: 52px;
       }
@@ -2164,6 +2164,7 @@ label {
                 top: 10px;
                 left: 10px;
                 font-size: 12px;
+                font-weight: 400;
                 z-index: 2;
                 background-color: #ffffff;
                 padding: 4px 8px;
@@ -2410,6 +2411,191 @@ label {
 .single-product .product-container .desc-container .desc-extra .btn:not(.collapsed):after {
               content: "Read Less";
             }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog {
+          -webkit-transition: -webkit-transform 0.3s linear;
+          transition: -webkit-transform 0.3s linear;
+          transition: transform 0.3s linear;
+          transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+          -webkit-transform: translate(0, 100%);
+                  transform: translate(0, 100%);
+        }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-header {
+              position: absolute;
+              top: 0;
+              right: 0;
+              padding: 0;
+              border: none;
+              -webkit-transform: translateY(-100%);
+                      transform: translateY(-100%);
+            }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-header .btn {
+                background-color: transparent;
+                border: none;
+                padding: 10px;
+              }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body {
+              padding: 0;
+            }
+@media (min-width: 768px) {
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body {
+                padding: 30px 0
+            }
+  }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container {
+                border-radius: 18px;
+                overflow: hidden;
+                max-width: 642px;
+                margin: 0 auto;
+              }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .product-image {
+                  border-radius: 18px;
+                  overflow: hidden;
+                  margin: 5px;
+                }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .product-image .lab-info {
+                    position: absolute;
+                    top: 10px;
+                    left: 10px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    z-index: 2;
+                    background-color: #ffffff;
+                    padding: 4px 8px;
+                    border-radius: 4px;
+                    color: #000000;
+                  }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .product-image .image-container {
+                    position: relative;
+                    padding-top: 125%;
+                  }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .product-image .image-container .article-image {
+                      position: absolute;
+                      top: 0;
+                      left: 0;
+                      width: 100%;
+                      height: 100%;
+                      -o-object-fit: cover;
+                         object-fit: cover;
+                      -webkit-transform-origin: center top;
+                              transform-origin: center top;
+                      -webkit-transition: all 0.3s ease;
+                      transition: all 0.3s ease;
+                    }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .product-image .carousel-control-prev,
+                  .modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .product-image .carousel-control-next {
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 50%;
+                    background: black;
+                    z-index: 6;
+                    top: 50%;
+                    -webkit-transform: translateY(-50%);
+                            transform: translateY(-50%);
+                    opacity: 0.9;
+                  }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .product-image .carousel-control-prev:hover,
+                    .modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .product-image .carousel-control-prev:focus,
+                    .modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .product-image .carousel-control-next:hover,
+                    .modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .product-image .carousel-control-next:focus {
+                      opacity: 0.9;
+                    }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .product-image .carousel-control-prev .button-icon, .modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .product-image .carousel-control-next .button-icon {
+                      width: 16px;
+                      height: 16px;
+                      -webkit-filter: invert(98%) sepia(91%) saturate(0%) hue-rotate(350deg) brightness(103%) contrast(102%);
+                              filter: invert(98%) sepia(91%) saturate(0%) hue-rotate(350deg) brightness(103%) contrast(102%);
+                    }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .product-image .carousel-control-prev {
+                    left: clamp(10px, 2.5vw, 30px);
+                  }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .product-image .carousel-control-next {
+                    right: clamp(10px, 2.5vw, 30px);
+                  }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .product-image .carousel-indicators {
+                    z-index: 7;
+                    width: 100%;
+                    padding: 0 30px 15px;
+                    left: 0;
+                    right: auto;
+                    bottom: 0;
+                    margin: 0;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                  }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .product-image .carousel-indicators [type="button"] {
+                      width: 10px;
+                      height: 10px;
+                      margin: 0 5px;
+                      border-radius: 50%;
+                    }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .product-image .carousel-indicators [type="button"].active {
+                        width: 16px;
+                        height: 16px;
+                      }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .desc-container {
+                  position: relative;
+                  font-size: 16px;
+                  white-space: normal;
+                  padding: 15px;
+                }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .desc-container .desc-link {
+                    display: block;
+                    line-height: 1.2em;
+                    padding-bottom: 5px;
+                    text-decoration: none;
+                  }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .desc-container .desc-link:hover,
+                    .modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .desc-container .desc-link:focus {
+                      text-decoration: none;
+                    }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .desc-container .desc-link [class*="prod-"] {
+                      margin-bottom: 4px;
+                    }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .desc-container .desc-link .prod-price {
+                      font-weight: 600;
+                    }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .desc-container .desc-link .prod-brand {
+                      font-size: 14px;
+                      opacity: 0.5;
+                    }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .desc-container .link-box {
+                    text-align: right;
+                  }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .desc-container .link-box .btn {
+                      width: 100%;
+                      max-width: 50%;
+                    }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .desc-container .link-box .btn[class*="ico-"] {
+                        margin-left: 4px;
+                      }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .desc-container .desc-extra {
+                    margin: 1rem 0 0.5rem;
+                  }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-body .product-container .desc-container .desc-extra * {
+                      font-size: 14px;
+                    }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-closure {
+              text-align: center;
+              padding: 30px;
+            }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-closure .btn {
+                background: none;
+                border-color: transparent;
+                padding: 12px;
+                opacity: 0.5;
+              }
+.modal.fade.modal-slideup.prod-details-modal .modal-dialog .modal-content .modal-closure .btn span[class*="ico-"] {
+                    -webkit-filter: unset;
+                            filter: unset;
+                  }
+.modal.fade.modal-slideup.show {
+        padding-top: 52px;
+      }
+.modal.fade.modal-slideup.show .modal-dialog {
+          -webkit-transform: none;
+                  transform: none;
+        }
 .loadmore-container {
   width: 100%;
   padding: 0 15px;

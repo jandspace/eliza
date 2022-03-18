@@ -23,6 +23,7 @@
 @import "modules/_comp--image-gallery-modal.pcss";
 @import "modules/_comp--product-gallery.pcss";
 @import "modules/_comp--single-product.pcss";
+@import "modules/_comp--product-details-modal.pcss";
 @import "modules/_comp--loadmore.pcss";
 @import "modules/_comp--tag-container.pcss";
 @import "modules/_comp--tag-container-selected.pcss";
