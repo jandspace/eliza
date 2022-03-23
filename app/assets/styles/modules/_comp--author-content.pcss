@@ -1,0 +1,105 @@
+.author-content {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 1rem;
+  @mixin md {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .image-wrapper {
+    padding: 15px;
+  }
+  .article-featured-image {
+    margin: -15px -15px 1rem;
+    @mixin md {
+      margin: 0 -30px 1rem;
+    }
+  }
+  .desc-container {
+    margin-bottom: 1rem;
+    .author-name {
+      text-align: center;
+      font-size: $font-size-lg4;
+      font-style: italic;
+    }
+    .author-connect {
+      margin-bottom: 1rem;
+      text-align: center;
+      .title {
+        font-size: $font-size-sm;
+        margin-bottom: 0.75rem;
+      }
+      .connect-option {
+        .author-connect-item {
+          display: inline-block;
+          margin: 0 5px;
+          &.author-email {
+            padding: 0;
+            border: none;
+            background: transparent;
+          }
+        }
+      }
+    }
+    .author-intro {
+      font-size: $font-size-sm;
+    }
+  }
+
+  .author-article {
+    border-top: 1px solid $color-black10;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    .article-container {
+      margin: 0 -15px 1rem;
+      @mixin md {
+        margin: 0 -30px 1rem;
+      }
+    }
+  }
+}
+
+.mailto-link {
+  position: relative;
+  padding: 8px 0;
+
+  .mailto-message {
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    position: absolute;
+    display: none;
+    width: auto;
+    white-space: nowrap;
+    font-size: $font-size-sm;
+    background-color: black;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 8px;
+    &:after,
+    &:before {
+      content: "";
+    }
+    &:before {
+      top: 100%;
+      left: 50%;
+      border: solid transparent;
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(0, 0, 0, 0);
+      border-top-color: #000000;
+      border-width: 4px;
+      margin-left: -4px;
+    }
+  }
+  &:hover,
+  &:focus,
+  &:focus-within {
+    .mailto-message {
+      display: block;
+    }
+  }
+}
