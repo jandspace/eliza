@@ -3044,46 +3044,46 @@ label {
     padding: 15px;
   }
 .author-content .article-featured-image {
-    margin: -15px -15px 1rem;
+    margin: 0 -15px 1rem;
   }
 @media (min-width: 768px) {
 .author-content .article-featured-image {
       margin: 0 -30px 1rem
   }
   }
-.author-content .desc-container {
+.author-content .author-details {
+    padding-bottom: 1rem;
     margin-bottom: 1rem;
+    border-bottom: 1px solid #e6e6e6;
   }
-.author-content .desc-container .author-name {
+.author-content .author-details .author-name {
       text-align: center;
       font-size: 24px;
       font-style: italic;
     }
-.author-content .desc-container .author-connect {
+.author-content .author-details .author-connect {
       margin-bottom: 1rem;
       text-align: center;
     }
-.author-content .desc-container .author-connect .title {
+.author-content .author-details .author-connect .title {
         font-size: 14px;
         margin-bottom: 0.75rem;
       }
-.author-content .desc-container .author-connect .connect-option .author-connect-item {
+.author-content .author-details .author-connect .connect-option .author-connect-item {
           display: inline-block;
           margin: 0 5px;
         }
-.author-content .desc-container .author-connect .connect-option .author-connect-item.author-email {
+.author-content .author-details .author-connect .connect-option .author-connect-item.author-email {
             padding: 0;
             border: none;
             background: transparent;
           }
-.author-content .desc-container .author-intro {
+.author-content .author-details .author-intro {
       font-size: 14px;
     }
-.author-content .author-article {
-    border-top: 1px solid #e6e6e6;
+/* border-top: 1px solid $color-black10;
     margin-top: 2rem;
-    padding-top: 2rem;
-  }
+    padding-top: 2rem; */
 .author-content .author-article .article-container {
       margin: 0 -15px 1rem;
     }
