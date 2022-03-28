@@ -320,6 +320,7 @@ h6 {
   font-family: freight-display-pro, serif;
   font-weight: 400;
   color: #000000;
+  line-height: 1.2em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -330,26 +331,32 @@ body {
 h1 {
   font-size: clamp(32px, 7.5vw, 36px);
   margin-bottom: 1.2rem;
+  /* line-height: 2.375rem; */
 }
 h2 {
   font-size: clamp(28px, 5.5vw, 32px);
   margin-bottom: 1rem;
+  /* line-height: 2.125rem; */
 }
 h3 {
   font-size: clamp(24px, 5vw, 28px);
   margin-bottom: 1rem;
+  /* line-height: 1.8rem; */
 }
 h4 {
   font-size: 20px;
   margin-bottom: 0.75rem;
+  /* line-height: 1.5rem; */
 }
 h5 {
   font-size: 18px;
   margin-bottom: 0.75rem;
+  /* line-height: 1.35rem; */
 }
 h6 {
   font-size: 16px;
   margin-bottom: 0.75rem;
+  /* line-height: 1.35rem; */
 }
 p,
 li {
@@ -370,6 +377,15 @@ p a:hover,
       color: #baac74;
       text-decoration: underline;
     }
+.has-text-align-left {
+  text-align: left;
+}
+.has-text-align-center {
+  text-align: center;
+}
+.has-text-align-right {
+  text-align: right;
+}
 /* Font Size */
 .font-xxxl {
   font-size: 28px ;
@@ -715,11 +731,12 @@ a.underline:hover,
     color: #baac74;
     text-decoration: underline;
   }
-ul {
+ul,
+ol {
   margin: 0 1rem 0 0;
   padding: 0 0 0 20px;
 }
-ul li {
+ul li, ol li {
     margin-bottom: 0.5rem;
   }
 img {
@@ -1229,12 +1246,12 @@ label {
             z-index: 1;
             display: block;
             width: 100%;
-            height: 50%;
+            height: 75%;
             left: 0;
             bottom: 0;
             background: rgba(0, 0, 0, 0.5);
-            background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0)));
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+            background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0)));
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
           }
 .hero-article .carousel-inner .carousel-item .hero-article-field .image-container .article-image {
             position: absolute;
@@ -1275,7 +1292,7 @@ label {
             margin: 0;
           }
 .hero-article .carousel-inner .carousel-item .hero-article-field .desc-container .article-title {
-            margin-bottom: 10px;
+            margin-bottom: 0.375rem;
             font-size: clamp(28px, 7.25vw, 36px);
           }
 .hero-article .carousel-control-prev,
