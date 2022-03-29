@@ -3148,6 +3148,97 @@ label {
 .mailto-link:hover .mailto-message, .mailto-link:focus .mailto-message, .mailto-link:focus-within .mailto-message {
       display: block;
     }
+.error-content {
+  position: relative;
+  padding: 0 15px;
+  margin-bottom: 1rem;
+}
+.error-content .error-content-head .error-details {
+      margin: 0 -15px 0;
+      padding: 3rem 1rem;
+    }
+@media (min-width: 768px) {
+.error-content .error-content-head .error-details {
+        padding: 5rem
+    }
+  }
+.error-content .error-content-head .error-details.error-bg {
+        background: -webkit-gradient(linear, right top, left top, from(#fceeea), color-stop(#fddae6), color-stop(#baac74), color-stop(#fddae6), to(#fceeea));
+        background: linear-gradient(-90deg, #fceeea, #fddae6, #baac74, #fddae6, #fceeea);
+        background-size: 1600% 1600%;
+        -webkit-animation: gradient 18s linear infinite;
+                animation: gradient 18s linear infinite;
+      }
+.error-content .error-content-head .error-details .error-code-container {
+        position: relative;
+        width: 128px;
+        height: 128px;
+        margin: 0 auto;
+      }
+.error-content .error-content-head .error-details .error-code-container .image-container {
+          opacity: 0.75;
+        }
+.error-content .error-content-head .error-details .error-code-container .error-code {
+          position: absolute;
+          top: 0;
+          left: 0;
+          -webkit-transform: translateX(-100%) translateY(-50%);
+                  transform: translateX(-100%) translateY(-50%);
+          display: inline-block;
+          font-weight: 400;
+          line-height: 1.2;
+          font-size: 24px;
+          text-align: center;
+          text-decoration: none;
+          text-transform: uppercase;
+          vertical-align: middle;
+          -webkit-user-select: none;
+             -moz-user-select: none;
+              -ms-user-select: none;
+                  user-select: none;
+          color: #000000;
+          background-color: #ffffff;
+          padding: 5px 20px;
+          border-radius: 9999px;
+          border-bottom-right-radius: 0;
+        }
+.error-content .error-content-head .error-details .error-message {
+        max-width: 344px;
+        margin: 0 auto;
+        text-align: center;
+      }
+.error-content .error-content-head .error-details .error-message .title {
+          font-size: 2rem;
+        }
+.error-content .error-content-head .error-details .error-message .title,
+        .error-content .error-content-head .error-details .error-message .message {
+          color: #000000;
+        }
+.error-content .error-content-body {
+    margin: 0 -15px;
+  }
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .category-content-head {
   position: relative;
   padding: 15px;

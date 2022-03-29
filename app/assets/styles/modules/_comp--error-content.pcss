@@ -1,0 +1,81 @@
+.error-content {
+  position: relative;
+  padding: 0 15px;
+  margin-bottom: 1rem;
+
+  .error-content-head {
+    .error-details {
+      margin: 0 -15px 0;
+      padding: 3rem 1rem;
+      @mixin md {
+        padding: 5rem;
+      }
+
+      &.error-bg {
+        background: linear-gradient(-90deg, $color-seashell, $color-marshmallow, $color-khaki, $color-marshmallow, $color-seashell);
+        background-size: 1600% 1600%;
+        animation: gradient 18s linear infinite;
+      }
+
+      .error-code-container {
+        position: relative;
+        width: 128px;
+        height: 128px;
+        margin: 0 auto;
+        .image-container {
+          opacity: 0.75;
+        }
+        .error-code {
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: translateX(-100%) translateY(-50%);
+          display: inline-block;
+          font-weight: 400;
+          line-height: 1.2;
+          font-size: 24px;
+          text-align: center;
+          text-decoration: none;
+          text-transform: uppercase;
+          vertical-align: middle;
+          user-select: none;
+          color: $color-black;
+          background-color: $color-white;
+          padding: 5px 20px;
+          border-radius: 9999px;
+          border-bottom-right-radius: 0;
+        }
+      }
+
+      .error-message {
+        max-width: 344px;
+        margin: 0 auto;
+        text-align: center;
+
+        .title {
+          font-size: 2rem;
+        }
+        .title,
+        .message {
+          color: $color-black;
+        }
+      }
+    }
+  }
+
+  .error-content-body {
+    margin: 0 -15px;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

@@ -37,6 +37,7 @@
 @import "modules/_comp--article-body-insta-widget.pcss";
 @import "modules/_comp--related-article.pcss";
 @import "modules/_comp--author-content.pcss";
+@import "modules/_comp--error-content.pcss";
 
 @import "modules/_comp--category-content-head.pcss";
 @import "modules/_comp--tag-content-head.pcss";
