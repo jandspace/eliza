@@ -920,22 +920,22 @@ label {
     position: relative;
   }
 .image-wrapper .image-container[class*="ratio-"] {
-      padding-top: 100%;
+      aspect-ratio: 1/1;
     }
 .image-wrapper .image-container[class*="ratio-"].ratio-4x5 {
-        padding-top: 125%;
+        aspect-ratio: 4/5;
       }
 .image-wrapper .image-container[class*="ratio-"].ratio-1x1 {
-        padding-top: 100%;
+        aspect-ratio: 1/1;
       }
 .image-wrapper .image-container[class*="ratio-"].ratio-3x2 {
-        padding-top: 66.66666667%;
+        aspect-ratio: 3/2;
       }
 .image-wrapper .image-container[class*="ratio-"].ratio-16x9 {
-        padding-top: 56.25%;
+        aspect-ratio: 16/9;
       }
 .image-wrapper .image-container[class*="ratio-"].ratio-5x2 {
-        padding-top: 40%;
+        aspect-ratio: 5/2;
       }
 .image-wrapper .image-container[class*="ratio-"] .article-image {
         position: absolute;
@@ -1250,8 +1250,8 @@ label {
             left: 0;
             bottom: 0;
             background: rgba(0, 0, 0, 0.5);
-            background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0)));
-            background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+            background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.75)), color-stop(80%, rgba(0, 0, 0, 0)));
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 80%);
           }
 .hero-article .carousel-inner .carousel-item .hero-article-field .image-container .article-image {
             position: absolute;
@@ -1400,7 +1400,7 @@ label {
       }
 .article-grid .article .article-inner .article-image-field .image-container {
           position: relative;
-          padding-top: 125%;
+          aspect-ratio: 4/5;
         }
 .article-grid .article .article-inner .article-image-field .image-container .article-image {
             position: absolute;
@@ -1599,7 +1599,7 @@ label {
   }
 .article-list .article .article-inner .article-image-field .image-container {
           position: relative;
-          padding-top: 125%;
+          aspect-ratio: 4/5;
         }
 .article-list .article .article-inner .article-image-field .image-container .article-image {
             position: absolute;
@@ -1725,7 +1725,7 @@ label {
   }
 .article-combi .article .article-inner .article-image-field .image-container {
           position: relative;
-          padding-top: 125%;
+          aspect-ratio: 4/5;
         }
 .article-combi .article .article-inner .article-image-field .image-container .article-image {
             position: absolute;
@@ -3065,9 +3065,15 @@ label {
   }
 @media (min-width: 768px) {
 .author-content .article-featured-image {
-      margin: 0 -30px 1rem
+      margin: 1rem -30px 1rem
   }
   }
+.author-content .article-featured-image .image-container {
+      width: 160px;
+      margin: 0 auto;
+      border-radius: 50%;
+      overflow: hidden;
+    }
 .author-content .author-details {
     padding-bottom: 1rem;
     margin-bottom: 1rem;
