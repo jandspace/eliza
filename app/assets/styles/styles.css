@@ -12,6 +12,7 @@
 @import "modules/_media.pcss";
 
 /* COMPONENT */
+@import "modules/_comp--loading.pcss";
 @import "modules/_comp--header.pcss";
 @import "modules/_comp--footer.pcss";
 @import "modules/_comp--nav.pcss";
