@@ -3,7 +3,7 @@
 //
 
 $(document).ready(function () {
-  $("#Article-Container .article-group > .article").slice(0, 15).show();
+  $("#Article-Container .article-group > .article").slice(0, 10).show();
   $("#Article-Container #loadMore").on("click", function (e) {
     e.preventDefault();
     $("#Article-Container .article-group > .article:hidden").slice(0, 15).slideDown();

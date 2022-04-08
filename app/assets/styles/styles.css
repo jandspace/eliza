@@ -42,6 +42,8 @@
 @import "modules/_comp--category-content-head.pcss";
 @import "modules/_comp--tag-content-head.pcss";
 
+@import "modules/_article-body.pcss";
+
 /* PAGE CUSTOMISATION */
 @import "pages/_page--home.pcss";
 @import "pages/_page--article.pcss";

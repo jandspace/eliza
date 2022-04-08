@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <title>Eliza - The Launch: April’s Hottest Fashion Drops</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#000000" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Bootstrap CSS Import -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!-- build:css /assets/styles/* -->
+    <link rel="stylesheet" href="temp/styles/styles.css" />
+  </head>
+
+  <body class="page-article scrollprogress">
+    <!-- Eliza Header-->
+    <header class="header global-header">
+      <div class="flex-container">
+        <div class="flex-item l-fn">
+          <nav class="main-nav">
+            <a class="nav-trigger" data-bs-toggle="offcanvas" href="#mainnav" role="button" aria-controls="mainnav">
+              <span class="ico-menu size-18 c-black"><!--icon--></span>
+            </a>
+          </nav>
+        </div>
+        <div class="flex-item c-fn">
+          <div class="logo">
+            <a href="page-home.html">
+              <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 92 36" viewBox="0 0 92 36" class="eliza-logo">
+                <g fill="#020203">
+                  <path d="m34.54 22.48v-18.48l-7.72 1.86.06.22c2.38-.53 2.5.44 2.5 2.3v14.09c0 2.66-.25 3.22-2.22 3.22v.22h9.6v-.21c-1.98 0-2.22-.56-2.22-3.22z"></path>
+                  <path d="m44.58 22.48v-8.13l.06-3.19-7.77 1.86.06.22c2.38-.53 2.5.44 2.5 2.3v6.94c0 2.66-.25 3.22-2.22 3.22v.22h9.6v-.22c-1.98 0-2.23-.56-2.23-3.22z"></path>
+                  <path d="m42 10.1c1.65 0 2.98-1.31 3.05-2.94.07-1.62-1.24-3.06-2.87-3.15-1.74-.1-3.23 1.29-3.23 3.02 0 1.69 1.38 3.07 3.05 3.07z"></path>
+                  <path d="m53.29 25.7 8.96-14.37h-9.3c-1.02-.02-3.01.21-4.31 1.15-.71.52-1.21 1.26-1.23 2.29-.01.78.29 1.37.8 1.74.07.06.16.11.24.15.35.19.78.3 1.24.3 1.1.02 2.08-.62 2.18-2.01-.51-.23-.84-.96-.83-1.52.01-.39.09-.73.22-1.02.28-.57.83-.91 1.67-.9 0 0 3.06.02 3.24.02l-.01.01-8.99 14.38h13.93l1.19-7.21h-.22c-.85 4.57-2.54 6.99-8.78 6.99z"></path>
+                  <path d="m83.89 25.49c-1.39 0-2.79.81-2.87 2.63.73.22 1.56.9 1.56 1.92 0 1.14-.78 1.7-1.73 1.7-2.48 0-2.59-2.76-2.59-6.67v-9.59c0-3.24-3.52-4.32-7.42-4.32-1.82 0-6.28.7-6.28 4.04 0 1.59 1.14 2.48 2.65 2.48 1.26 0 2.37-.75 2.46-2.35-.58-.25-.98-1.09-.98-1.73 0-1.37.7-2.23 2.15-2.23 1.92 0 2.23 1.95 2.23 3.71v1.67c-3.1 2.18-9.43 1.39-9.43 5.83 0 2.4 1.67 3.68 4.3 3.68 2.23 0 4.41-1.17 5.19-3.17v.65c0 5.44 4.13 8.26 7.73 8.26 2.65 0 5.86-1.03 5.86-3.71-.01-1.88-1.35-2.8-2.83-2.8zm-10.83-3.32c0 1.03-.64 2.07-1.82 2.07-1.45 0-1.92-1.42-1.92-2.76 0-3.12 1.79-3.15 3.74-4.44z"></path>
+                  <path d="m22.36 22.75c-2.64 0-4.72-1.69-4.87-5.55 3.35.26 6.2.35 9.23-.11.89-3.52-1.64-5.94-6.38-5.94-4.03 0-6.91 2.18-7.81 5.5-.63-.09-1.18-.26-2.3-.26-2.27 0-4.94.75-4.94 3.3 0 1.77 1.42 2.8 2.86 2.8 1.39 0 2.72-.8 2.8-2.55-.67-.28-1.3-.86-1.3-1.77 0-1.16 1-1.39 1.69-1.39.39 0 .52.04 1.13.11-.15.64-.23 1.32-.23 2.03 0 4.52 3.27 7.27 7.12 7.27s6.38-2.44 7.6-5.41l-.17-.08c-.98 1.52-3.04 2.05-4.43 2.05zm-4.87-6.02c0-2 .47-5.35 2.86-5.35 2.17 0 1.95 3.78 1.37 5.78-1.41.01-2.81-.09-4.22-.19-.01-.08-.01-.16-.01-.24z"></path>
+                </g>
+              </svg>
+              <!-- <img src="http://jandspace.com/wp-content/uploads/2022/02/logo-eliza.svg" class="eliza-logo" /> -->
+            </a>
+          </div>
+        </div>
+        <div class="flex-item r-fn"></div>
+      </div>
+    </header>
+    <div class="nav-container offcanvas offcanvas-start" tabindex="-1" id="mainnav" aria-labelledby="mainnavLabel">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="home-button-container">
+          <a href="page-home.html" class="btn secondary reverse sm home-btn">Home</a>
+        </div>
+      </div>
+      <div class="offcanvas-body">
+        <div class="offcanvas-content">
+          <ul class="nav-panel-menu primary-menu-container">
+            <li class="primary-menu">
+              <a href="page-category.html" class="menu-link">Fashion</a>
+            </li>
+            <li class="primary-menu">
+              <a href="page-category.html" class="menu-link">Beauty</a>
+            </li>
+            <!-- <li class="primary-menu">
+              <a href="page-category.html" class="menu-link">Living</a>
+            </li> -->
+          </ul>
+          <ul class="nav-panel-menu secondary-menu-container">
+            <li class="secondary-menu">
+              <a href="page-about.html" class="menu-link">About Eliza</a>
+            </li>
+            <li class="secondary-menu">
+              <a href="page-contact.html" class="menu-link">Contact Us</a>
+            </li>
+            <li class="secondary-menu">
+              <a href="page-terms.html" class="menu-link">Terms and Conditions</a>
+            </li>
+            <li class="secondary-menu">
+              <a href="page-privacy.html" class="menu-link">Privacy Policy</a>
+            </li>
+          </ul>
+          <div class="nav-panel-menu sn-link-container">
+            <p>Follow us on</p>
+            <div class="sn-link-wrapper">
+              <a href="https://www.instagram.com/eliza.co.uk/" class="sn-link" target="_blank">
+                <span class="ico-sn-instagram size-36 c-white"><!--icon--></span>
+              </a>
+              <a href="https://www.tiktok.com/" class="sn-link" class="sn-link" target="_blank">
+                <span class="ico-sn-tiktok size-36 c-white"><!--icon--></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="main">
+      <!-- comp-article-breadcrumb -->
+      <div class="component article-breadcrumb">
+        <a href="page-category.html" class="category-link">Fashion</a>
+        <span class="divider">|</span>
+        <a href="page-tag.html" class="tag-link">Dresses</a>
+      </div>
+
+      <div class="main-wrapper">
+        <article class="article article-content">
+          <!-- comp-article-content-head -->
+          <div class="component article-content-head">
+            <div class="image-wrapper article-featured-image">
+              <div class="image-container ratio-4x5">
+                <img src="https://dmgmedia-eliza.go-vip.net/wp-content/uploads/2022/02/image.png" class="article-image" />
+              </div>
+              <div class="image-caption">Optional Image caption by Lorem ipsum</div>
+            </div>
+            <div class="desc-container">
+              <h1 class="article-title">How to look stylish at brunch</h1>
+              <h2 class="article-summary">Bottomless brunches are the social event that work year round: they’re fun, full of food and drink, and you can dress up (or down) as you please – what’s not to love? Getting all glammed up for dinner is a given, but for a mid-morning event? Well, brunch is as much about outfit as it ...</h2>
+            </div>
+            <div class="pubinfo-container">
+              <div class="info-author">
+                <div class="author-profile">
+                  <a href="page-author.html" class="image-container">
+                    <!-- <img src="assets/images/author-profile-thumbnail.jpg" class="author-profile-image" alt="Author Photo" /> -->
+                  </a>
+                </div>
+                <div class="author-name">
+                  <a href="page-author.html" class="underline">Krissy Turner</a>
+                </div>
+              </div>
+              <span class="divider">|</span>
+              <div class="info-date">31 December 2022</div>
+            </div>
+          </div>
+
+          <!-- comp-article-share -->
+          <div class="component article-content-share">
+            <div class="sharethis-button">
+              <a class="btn secondary sm collapsed" data-bs-toggle="collapse" href="#collapseShareIcon" role="button" aria-expanded="false" aria-controls="collapseShareIcon">
+                <span class="ico-sharethis size-12 c-black"><!--icon--></span>
+                <span class="btn-text">Share</span>
+                <span class="ico-multiply size-12 c-black"><!--icon--></span>
+              </a>
+            </div>
+            <div class="sharethis collapse collapse-horizontal" id="collapseShareIcon">
+              <div class="sharethis-container">
+                <a href="#" class="btn share-facebook">
+                  <span class="ico-sharethis-fb"><!--icon--></span>
+                </a>
+                <a href="#" class="btn share-twitter">
+                  <span class="ico-sharethis-tw"><!--icon--></span>
+                </a>
+                <a href="#" class="btn share-whatsapp">
+                  <span class="ico-sharethis-wa"><!--icon--></span>
+                </a>
+                <a href="#" class="btn share-email">
+                  <span class="ico-sharethis-ma"><!--icon--></span>
+                </a>
+                <a href="#" class="btn share-link">
+                  <span class="ico-sharethis-lk"><!--icon--></span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- comp-article-body -->
+          <div class="article-content-body">
+            <!-- Eliza WP Article Content Copy : START-->
+            <div class="article__body">
+              <div>
+                <p>Bottomless brunches are the social event that work year round: they’re fun, full of food and drink, and you can dress up (or down) as you please – what’s not to love?</p>
+
+                <figure class="wp-block-image size-full">
+                  <img loading="lazy" width="800" height="500" src="https://dmgmedia-eliza.go-vip.net/wp-content/uploads/2022/02/Brunch-Outfits-with-Jeans.jpg" alt="" class="wp-image-587" srcset="https://dmgmedia-eliza.go-vip.net/wp-content/uploads/2022/02/Brunch-Outfits-with-Jeans.jpg 800w, https://dmgmedia-eliza.go-vip.net/wp-content/uploads/2022/02/Brunch-Outfits-with-Jeans.jpg?resize=300,188 300w, https://dmgmedia-eliza.go-vip.net/wp-content/uploads/2022/02/Brunch-Outfits-with-Jeans.jpg?resize=768,480 768w, https://dmgmedia-eliza.go-vip.net/wp-content/uploads/2022/02/Brunch-Outfits-with-Jeans.jpg?resize=50,31 50w" sizes="(max-width: 800px) 100vw, 800px" />
+                  <figcaption>Molly Mae, Audrey Frassy, Fisayo Longe, We Are The Food Whores</figcaption>
+                </figure>
+
+                <p>Getting all glammed up for dinner is a given, but for a mid-morning event? Well, brunch is as much about outfit as it is about the cocktails and pancakes, so take note of these five style tips <em>before</em> you leave the house this season.</p>
+
+                <h3 id="have-a-think-about-your-shoes"><strong>Have a think about your shoes…</strong></h3>
+
+                <p>OK, your best heels might feel like a great idea when you’re on your way out the door, but when you’re on the way home after a handful of passion fruit martinis, you might regret 4-inch heels. Instead, try a pair of low-heeled mules. They’re just as chic and versatile, but far easier to walk in.</p>
+
+                <div class="wp-block-columns">
+                  <div class="wp-block-column">
+                    <div class="wp-block-image">
+                      <figure class="aligncenter size-large">
+                        <img loading="lazy" width="320" height="409" src="http://dmgmedia-eliza.go-vip.net/wp-content/uploads/2022/02/fj-5_green_faux_suede_strappy_sandal_1-1.jpg?w=320" alt="" class="wp-image-603" srcset="https://dmgmedia-eliza.go-vip.net/wp-content/uploads/2022/02/fj-5_green_faux_suede_strappy_sandal_1-1.jpg 320w, https://dmgmedia-eliza.go-vip.net/wp-content/uploads/2022/02/fj-5_green_faux_suede_strappy_sandal_1-1.jpg?resize=235,300 235w, https://dmgmedia-eliza.go-vip.net/wp-content/uploads/2022/02/fj-5_green_faux_suede_strappy_sandal_1-1.jpg?resize=39,50 39w" sizes="(max-width: 320px) 100vw, 320px" />
+                        <figcaption>Zara £39 www.zara.Co.uk</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+
+                <h4 id="because-trainers-might-be-the-best-idea"><strong>…because trainers might be the best idea</strong></h4>
+
+                <p>It’s also worth noting that when you’re at a table, your shoes are hidden away, so if you want to get away with a pair of smart trainers or jazzy flat shoes, now is the best time. They’ll add a casual element to a fancy look and your feet will be grateful if you head out shopping or for drinks afterwards.</p>
+
+                <div class="wp-block-columns">
+                  <div class="wp-block-column">
+                    <div class="wp-block-image">
+                      <figure class="aligncenter size-large">
+                        <img loading="lazy" width="1100" height="1100" src="http://dmgmedia-eliza.go-vip.net/wp-content/uploads/2022/02/trainer.jpg?w=1024" alt="" class="wp-image-597" srcset="https://dmgmedia-eliza.go-vip.net/wp-content/uploads/2022/02/trainer.jpg 1100w, https://dmgmedia-eliza.go-vip.net/wp-content/uploads/2022/02/trainer.jpg?resize=150,150 150w, https://dmgmedia-eliza.go-vip.net/wp-content/uploads/2022/02/trainer.jpg?resize=300,300 300w, https://dmgmedia-eliza.go-vip.net/wp-content/uploads/2022/02/trainer.jpg?resize=768,768 768w, https://dmgmedia-eliza.go-vip.net/wp-content/uploads/2022/02/trainer.jpg?resize=1024,1024 1024w, https://dmgmedia-eliza.go-vip.net/wp-content/uploads/2022/02/trainer.jpg?resize=50,50 50w" sizes="(max-width: 1100px) 100vw, 1100px" />
+                        <figcaption>Nike £59 www.Nike.co.uk</figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+
+                <h4 id="the-outfit-comfort-is-important"><strong>The outfit -comfort is important</strong></h4>
+
+                <p>When there’s bottomless food or drink involved, can you think of anything worse than rigid jeans or too-tight trouser buttons digging into your midriff? A dress will minimise that dreaded overstuffed feeling, and a wrap or shirt style are classic and stylish. Opt for a colourblock version and pair with minimal accessories. Oversized fits are big news for this season: think a blazer dress or a poplin shirt in a bright shade which would look great with wide leg trousers.&nbsp;</p>
+
+                <figure class="wp-block-image size-large"><img loading="lazy" width="800" height="1200" src="http://dmgmedia-eliza.go-vip.net/wp-content/uploads/2022/02/blonde-woman-with-jeans-white-top-and-sneakers-1.png?w=683" alt="" class="wp-image-599" srcset="https://dmgmedia-eliza.go-vip.net/wp-content/uploads/2022/02/blonde-woman-with-jeans-white-top-and-sneakers-1.png 800w, https://dmgmedia-eliza.go-vip.net/wp-content/uploads/2022/02/blonde-woman-with-jeans-white-top-and-sneakers-1.png?resize=200,300 200w, https://dmgmedia-eliza.go-vip.net/wp-content/uploads/2022/02/blonde-woman-with-jeans-white-top-and-sneakers-1.png?resize=768,1152 768w, https://dmgmedia-eliza.go-vip.net/wp-content/uploads/2022/02/blonde-woman-with-jeans-white-top-and-sneakers-1.png?resize=683,1024 683w, https://dmgmedia-eliza.go-vip.net/wp-content/uploads/2022/02/blonde-woman-with-jeans-white-top-and-sneakers-1.png?resize=33,50 33w" sizes="(max-width: 800px) 100vw, 800px" /></figure>
+
+                <h4 id="it-s-all-in-the-accessories"><strong>It’s all in the accessories </strong></h4>
+
+                <p>Since only your top half is on the show when you take pictures at the table, it’s a wise idea to focus the majority of your efforts here. ‘Tabletop’ dressing requires sparkly earrings, an embellished headband and a stack of gold bracelets or rings. A teeny sparkly ornament-esque bag small enough to sit on the table will be a welcome addition, too.</p>
+
+                <h4 id="go-fashion-forward"><strong>Go fashion-forward</strong></h4>
+
+                <p>You won’t regret opting for your most stylish pieces that’ll impress your friends and have you feeling chic. Think that slick oversized blazer, your colour pop tiny bag or quirky gold hoop earrings. If the past two years have taught us anything style-wise, it’s not to save anything for ‘best,’ so if you’ve been thinking about wearing your embellished satin mules or your new leather blazer, a stylish bottomless brunch is the best time to take the plunge.</p>
+
+                <h4 id="4-chic-bottomless-brunch-looks-we-love">4 chic bottomless brunch looks we love:</h4>
+
+                <figure class="wp-block-embed is-type-rich is-provider-instagram wp-block-embed-instagram">
+                  <div class="wp-block-embed__wrapper">
+                    <blockquote class="instagram-media" data-instgrm-captioned="" data-instgrm-permalink="https://www.instagram.com/p/CVN91gPIFQr/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background: #fff; border: 0; border-radius: 3px; box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15); margin: 1px; max-width: 500px; min-width: 326px; padding: 0; width: 99.375%; width: -webkit-calc(100% - 2px); width: calc(100% - 2px)">
+                      <div style="padding: 16px">
+                        <a href="https://www.instagram.com/p/CVN91gPIFQr/?utm_source=ig_embed&amp;utm_campaign=loading" style="background: #ffffff; line-height: 0; padding: 0 0; text-align: center; text-decoration: none; width: 100%" target="_blank">
+                          <div style="display: flex; flex-direction: row; align-items: center">
+                            <div style="background-color: #f4f4f4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px"></div>
+                            <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center">
+                              <div style="background-color: #f4f4f4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px"></div>
+                              <div style="background-color: #f4f4f4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px"></div>
+                            </div>
+                          </div>
+                          <div style="padding: 19% 0"></div>
+                          <div style="display: block; height: 50px; margin: 0 auto 12px; width: 50px">
+                            <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+                              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                  <g>
+                                    <path
+                                      d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"
+                                    ></path>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </div>
+                          <div style="padding-top: 8px"><div style="color: #3897f0; font-family: Arial, sans-serif; font-size: 14px; font-style: normal; font-weight: 550; line-height: 18px">View this post on Instagram</div></div>
+                          <div style="padding: 12.5% 0"></div>
+                          <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center">
+                            <div>
+                              <div style="background-color: #f4f4f4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px)"></div>
+                              <div style="background-color: #f4f4f4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px"></div>
+                              <div style="background-color: #f4f4f4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px)"></div>
+                            </div>
+                            <div style="margin-left: 8px">
+                              <div style="background-color: #f4f4f4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px"></div>
+                              <div style="width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div>
+                            </div>
+                            <div style="margin-left: auto">
+                              <div style="width: 0px; border-top: 8px solid #f4f4f4; border-right: 8px solid transparent; transform: translateY(16px)"></div>
+                              <div style="background-color: #f4f4f4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px)"></div>
+                              <div style="width: 0; height: 0; border-top: 8px solid #f4f4f4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px)"></div>
+                            </div>
+                          </div>
+                          <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px">
+                            <div style="background-color: #f4f4f4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px"></div>
+                            <div style="background-color: #f4f4f4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px"></div></div
+                        ></a>
+                        <p style="color: #c9c8cd; font-family: Arial, sans-serif; font-size: 14px; line-height: 17px; margin-bottom: 0; margin-top: 8px; overflow: hidden; padding: 8px 0 7px; text-align: center; text-overflow: ellipsis; white-space: nowrap"><a href="https://www.instagram.com/p/CVN91gPIFQr/?utm_source=ig_embed&amp;utm_campaign=loading" style="color: #c9c8cd; font-family: Arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; line-height: 17px; text-decoration: none" target="_blank">A post shared by Molly-Mae Hague (@mollymae)</a></p>
+                      </div>
+                    </blockquote>
+                    <script async="" src="//platform.instagram.com/en_US/embeds.js"></script>
+                  </div>
+                </figure>
+
+                <figure class="wp-block-embed is-type-rich is-provider-instagram wp-block-embed-instagram">
+                  <div class="wp-block-embed__wrapper">
+                    <blockquote class="instagram-media" data-instgrm-captioned="" data-instgrm-permalink="https://www.instagram.com/p/CRJBs_KHIZx/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background: #fff; border: 0; border-radius: 3px; box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15); margin: 1px; max-width: 500px; min-width: 326px; padding: 0; width: 99.375%; width: -webkit-calc(100% - 2px); width: calc(100% - 2px)">
+                      <div style="padding: 16px">
+                        <a href="https://www.instagram.com/p/CRJBs_KHIZx/?utm_source=ig_embed&amp;utm_campaign=loading" style="background: #ffffff; line-height: 0; padding: 0 0; text-align: center; text-decoration: none; width: 100%" target="_blank">
+                          <div style="display: flex; flex-direction: row; align-items: center">
+                            <div style="background-color: #f4f4f4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px"></div>
+                            <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center">
+                              <div style="background-color: #f4f4f4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px"></div>
+                              <div style="background-color: #f4f4f4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px"></div>
+                            </div>
+                          </div>
+                          <div style="padding: 19% 0"></div>
+                          <div style="display: block; height: 50px; margin: 0 auto 12px; width: 50px">
+                            <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+                              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                  <g>
+                                    <path
+                                      d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"
+                                    ></path>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg>
+                          </div>
+                          <div style="padding-top: 8px"><div style="color: #3897f0; font-family: Arial, sans-serif; font-size: 14px; font-style: normal; font-weight: 550; line-height: 18px">View this post on Instagram</div></div>
+                          <div style="padding: 12.5% 0"></div>
+                          <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center">
+                            <div>
+                              <div style="background-color: #f4f4f4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px)"></div>
+                              <div style="background-color: #f4f4f4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px"></div>
+                              <div style="background-color: #f4f4f4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px)"></div>
+                            </div>
+                            <div style="margin-left: 8px">
+                              <div style="background-color: #f4f4f4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px"></div>
+                              <div style="width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div>
+                            </div>
+                            <div style="margin-left: auto">
+                              <div style="width: 0px; border-top: 8px solid #f4f4f4; border-right: 8px solid transparent; transform: translateY(16px)"></div>
+                              <div style="background-color: #f4f4f4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px)"></div>
+                              <div style="width: 0; height: 0; border-top: 8px solid #f4f4f4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px)"></div>
+                            </div>
+                          </div>
+                          <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px">
+                            <div style="background-color: #f4f4f4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px"></div>
+                            <div style="background-color: #f4f4f4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px"></div></div
+                        ></a>
+                        <p style="color: #c9c8cd; font-family: Arial, sans-serif; font-size: 14px; line-height: 17px; margin-bottom: 0; margin-top: 8px; overflow: hidden; padding: 8px 0 7px; text-align: center; text-overflow: ellipsis; white-space: nowrap"><a href="https://www.instagram.com/p/CRJBs_KHIZx/?utm_source=ig_embed&amp;utm_campaign=loading" style="color: #c9c8cd; font-family: Arial, sans-serif; font-size: 14px; font-style: normal; font-weight: normal; line-height: 17px; text-decoration: none" target="_blank">A post shared by London Food &amp; Drinks | Blogger (@wearethefoodwhores)</a></p>
+                      </div>
+                    </blockquote>
+                    <script async="" src="//platform.instagram.com/en_US/embeds.js"></script>
+                  </div>
+                </figure>
+
+                <h4></h4>
+
+                <div class="wp-container-1 wp-block-buttons">
+                  <div class="wp-block-button"><a class="wp-block-button__link">Shop all the products featured </a></div>
+                </div>
+
+                <p></p>
+              </div>
+            </div>
+
+            <!-- Article Body END -->
+          </div>
+        </article>
+
+        <!-- comp-tag-container -->
+        <div class="component tag-container">
+          <div class="title-container">
+            <h3 class="title">Find more articles by keyword</h3>
+          </div>
+          <ul class="tag-collection footer-tag">
+            <li class="tag-item">
+              <a class="tag" href="page-tag.html">Tote Bags</a>
+            </li>
+            <li class="tag-item">
+              <a class="tag" href="page-tag.html">Makeup</a>
+            </li>
+            <li class="tag-item">
+              <a class="tag" href="page-tag.html">Jeans</a>
+            </li>
+            <li class="tag-item">
+              <a class="tag" href="page-tag.html">Molly Mae</a>
+            </li>
+            <li class="tag-item">
+              <a class="tag" href="page-tag.html">Nails</a>
+            </li>
+            <li class="tag-item">
+              <a class="tag" href="page-tag.html">Moisturiser</a>
+            </li>
+            <li class="tag-item">
+              <a class="tag" href="page-tag.html">Skincare</a>
+            </li>
+            <li class="tag-item">
+              <a class="tag" href="page-tag.html">Brunch outfits</a>
+            </li>
+            <li class="tag-item">
+              <a class="tag" href="page-tag.html">Lipstick</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- comp-related-article -->
+        <div class="component related-article">
+          <div class="title-container">
+            <h3 class="title">Related Articles</h3>
+          </div>
+          <div class="article-container" id="Realted-Article">
+            <div class="article-group article-list flex-container">
+              <!-- Article Card -->
+              <article class="article flex-item card-type-b">
+                <div class="article-inner">
+                  <a href="article-the-new-gossip-girl-is-already-having-an-impact-on-the-fashion-industry.html" class="article-image-field">
+                    <div class="image-container">
+                      <img src="https://dmgmedia-eliza.go-vip.net/wp-content/uploads/2021/09/Option-2-1-1-e1631094573263.jpg" class="article-image" />
+                    </div>
+                  </a>
+                  <div class="article-desc-field match-height">
+                    <div class="desc-inner">
+                      <label class="tags primary-tag">
+                        <a href="page-tag.html">Gossip Girl</a>
+                      </label>
+                      <h2 class="article-title">
+                        <a href="article-the-new-gossip-girl-is-already-having-an-impact-on-the-fashion-industry.html">The New 'Gossip Girl' is already having an impact on the fashion industry</a>
+                      </h2>
+                      <div class="publish-date">
+                        <span class="day">31</span>
+                        <span class="month">December</span>
+                        <span class="year">2022</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Article Card -->
+              <article class="article flex-item card-type-c">
+                <div class="article-inner">
+                  <a href="article-vegan-skincare.html" class="article-image-field">
+                    <div class="image-container">
+                      <img src="https://dmgmedia-eliza.go-vip.net/wp-content/uploads/2021/09/241064490_445548023346366_4153939304487415730_n.jpg" class="article-image" />
+                    </div>
+                  </a>
+                  <div class="article-desc-field match-height">
+                    <div class="desc-inner">
+                      <label class="tags primary-tag">
+                        <a href="page-tag.html">Skincare</a>
+                      </label>
+                      <h2 class="article-title">
+                        <a href="article-vegan-skincare.html">5 new vegan skincare brands to have on your radar</a>
+                      </h2>
+                      <div class="publish-date">
+                        <span class="day">31</span>
+                        <span class="month">December</span>
+                        <span class="year">2022</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Article Card -->
+              <article class="article flex-item card-type-d">
+                <div class="article-inner">
+                  <a href="article-winter-skincare-routine.html" class="article-image-field">
+                    <div class="image-container">
+                      <img src="https://dmgmedia-eliza.go-vip.net/wp-content/uploads/2021/09/Biossance-Squalane-and-Vitamin-C-Rose-Oil.jpeg" class="article-image" />
+                    </div>
+                  </a>
+                  <div class="article-desc-field match-height">
+                    <div class="desc-inner">
+                      <label class="tags primary-tag">
+                        <a href="page-tag.html">Moisturiser</a>
+                      </label>
+                      <h2 class="article-title">
+                        <a href="article-winter-skincare-routine.html">7 swaps to make for your winter skincare routine</a>
+                      </h2>
+                      <div class="publish-date">
+                        <span class="day">31</span>
+                        <span class="month">December</span>
+                        <span class="year">2022</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Article Card -->
+              <article class="article flex-item card-type-a">
+                <div class="article-inner">
+                  <a href="article-best-lipsticks-dry-lips.html" class="article-image-field">
+                    <div class="image-container">
+                      <img src="https://dmgmedia-eliza.go-vip.net/wp-content/uploads/2022/04/glossier-coupe-lead-2.jpg" class="article-image" />
+                    </div>
+                  </a>
+                  <div class="article-desc-field match-height">
+                    <div class="desc-inner">
+                      <label class="tags primary-tag">
+                        <a href="page-tag.html">Lipstick</a>
+                      </label>
+                      <h2 class="article-title">
+                        <a href="article-best-lipsticks-dry-lips.html">6 of the best lipsticks for dry, chapped lips that will last all day</a>
+                      </h2>
+                      <div class="publish-date">
+                        <span class="day">31</span>
+                        <span class="month">December</span>
+                        <span class="year">2022</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Article Card -->
+              <article class="article flex-item card-type-a">
+                <div class="article-inner">
+                  <a href="article-brunch-outift-ideas.html" class="article-image-field">
+                    <div class="image-container">
+                      <img src="https://dmgmedia-eliza.go-vip.net/wp-content/uploads/2022/02/image.png" class="article-image" />
+                    </div>
+                  </a>
+                  <div class="article-desc-field match-height">
+                    <div class="desc-inner">
+                      <label class="tags primary-tag">
+                        <a href="page-tag.html">Dresses</a>
+                      </label>
+                      <h2 class="article-title">
+                        <a href="article-brunch-outift-ideas.html">How to look stylish at brunch</a>
+                      </h2>
+                      <div class="publish-date">
+                        <span class="day">31</span>
+                        <span class="month">December</span>
+                        <span class="year">2022</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Article Card -->
+              <article class="article flex-item card-type-a">
+                <div class="article-inner">
+                  <a href="article-byome-skincare-range.html" class="article-image-field">
+                    <div class="image-container">
+                      <img src="https://dmgmedia-eliza.go-vip.net/wp-content/uploads/2022/02/byoma-products.webp" class="article-image" />
+                    </div>
+                  </a>
+                  <div class="article-desc-field match-height">
+                    <div class="desc-inner">
+                      <label class="tags primary-tag">
+                        <a href="page-tag.html">Byoma</a>
+                      </label>
+                      <h2 class="article-title">
+                        <a href="article-byome-skincare-range.html">The new skincare range eveyone is talking about</a>
+                      </h2>
+                      <div class="publish-date">
+                        <span class="day">31</span>
+                        <span class="month">December</span>
+                        <span class="year">2022</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Load More -->
+              <section class="loadmore-container">
+                <div class="load-more">
+                  <button class="btn secondary md" type="button" id="loadMore">Load More</button>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer // Start -->
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="footer-content">
+          <!-- Social Network Links -->
+          <div class="nav-panel-menu sn-link-container">
+            <p>Follow us on</p>
+            <div class="sn-link-wrapper">
+              <a href="https://www.instagram.com/eliza.co.uk/" class="sn-link" target="_blank">
+                <span class="ico-sn-instagram size-36 c-white"><!--icon--></span>
+              </a>
+              <a href="https://www.tiktok.com/" class="sn-link" class="sn-link" target="_blank">
+                <span class="ico-sn-tiktok size-36 c-white"><!--icon--></span>
+              </a>
+            </div>
+          </div>
+          <!-- Primary Menu -->
+          <ul class="nav-panel-menu primary-menu-container">
+            <li class="primary-menu">
+              <a href="page-category.html" class="menu-link">Fashion</a>
+            </li>
+            <li class="primary-menu">
+              <a href="page-category.html" class="menu-link">Beauty</a>
+            </li>
+            <!-- <li class="primary-menu">
+              <a href="page-category.html" class="menu-link">Living</a>
+            </li> -->
+          </ul>
+          <!-- Secondary Menu -->
+          <ul class="nav-panel-menu secondary-menu-container">
+            <li class="secondary-menu">
+              <a href="page-about.html" class="menu-link">About Eliza</a>
+            </li>
+            <li class="secondary-menu">
+              <a href="page-contact.html" class="menu-link">Contact Us</a>
+            </li>
+            <li class="secondary-menu">
+              <a href="page-terms.html" class="menu-link">Terms and Conditions</a>
+            </li>
+            <li class="secondary-menu">
+              <a href="page-privacy.html" class="menu-link">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-copyright">© <a href="page-home.html">2022 Eliza</a>. All Rights Reserved</div>
+      </div>
+    </footer>
+    <!-- Footer // End -->
+
+    <!-- JQuery Import -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Bootstrap JS Import -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- build:js /assets/scripts/App.js -->
+    <script src="temp/scripts/App.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
