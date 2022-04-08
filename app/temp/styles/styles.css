@@ -1001,8 +1001,8 @@ body.loading {
     height: auto;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -100%);
+            transform: translate(-50%, -100%);
   }
 .loading-ui .loading-container .loading-ani {
       width: 64px;
