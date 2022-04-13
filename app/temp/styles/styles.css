@@ -3417,19 +3417,19 @@ This is a Temporary Solution for MVP
     .article__body [class*="comp-"] h6 {
       margin-top: 0;
     }
-.article__body figure.wp-block-image {
-      margin-left: -1rem;
-      margin-right: -1rem;
-    }
-.article__body figure.wp-block-video {
-      margin-left: -1rem;
-      margin-right: -1rem;
+.article__body figure.wp-block-image,
+    .article__body figure.wp-block-video,
+    .article__body figure.tiled-gallery__item {
+      margin-left: -0.938rem;
+      margin-right: -0.938rem;
     }
 .article__body figure.wp-block-video video {
         -o-object-fit: cover;
            object-fit: cover;
         width: 100%;
       }
+.article__body figure {
+    }
 .article__body figure figcaption {
       font-weight: 300;
       font-size: 0.75rem;
@@ -3440,6 +3440,10 @@ This is a Temporary Solution for MVP
       text-align: center;
       padding-left: 1rem;
       padding-right: 1rem;
+    }
+.article__body figure iframe {
+      margin-left: auto !important;
+      margin-right: auto !important;
     }
 .article__body .wp-block-buttons {
     margin-bottom: 1rem;

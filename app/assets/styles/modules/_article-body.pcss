@@ -42,17 +42,19 @@ This is a Temporary Solution for MVP
   }
 
   figure {
-    &.wp-block-image {
-      margin-left: -1rem;
-      margin-right: -1rem;
+    &.wp-block-image,
+    &.wp-block-video,
+    &.tiled-gallery__item {
+      margin-left: -0.938rem;
+      margin-right: -0.938rem;
     }
     &.wp-block-video {
-      margin-left: -1rem;
-      margin-right: -1rem;
       video {
         object-fit: cover;
         width: 100%;
       }
+    }
+     {
     }
     figcaption {
       font-weight: 300;
@@ -64,6 +66,10 @@ This is a Temporary Solution for MVP
       text-align: center;
       padding-left: 1rem;
       padding-right: 1rem;
+    }
+    iframe {
+      margin-left: auto !important;
+      margin-right: auto !important;
     }
   }
 
