@@ -920,22 +920,28 @@ label {
     position: relative;
   }
 .image-wrapper .image-container[class*="ratio-"] {
-      aspect-ratio: 1/1;
+      padding-top: 100%;
     }
+/* aspect-ratio: 1/1; */
 .image-wrapper .image-container[class*="ratio-"].ratio-4x5 {
-        aspect-ratio: 4/5;
+        padding-top: 125%;
+        /* aspect-ratio: 4/5; */
       }
 .image-wrapper .image-container[class*="ratio-"].ratio-1x1 {
-        aspect-ratio: 1/1;
+        padding-top: 100%;
+        /* aspect-ratio: 1/1; */
       }
 .image-wrapper .image-container[class*="ratio-"].ratio-3x2 {
+        padding-top: 66.6666667%;
         aspect-ratio: 3/2;
       }
 .image-wrapper .image-container[class*="ratio-"].ratio-16x9 {
-        aspect-ratio: 16/9;
+        padding-top: 56.25%;
+        /* aspect-ratio: 16/9; */
       }
 .image-wrapper .image-container[class*="ratio-"].ratio-5x2 {
-        aspect-ratio: 5/2;
+        padding-top: 40%;
+        /* aspect-ratio: 5/2; */
       }
 .image-wrapper .image-container[class*="ratio-"] .article-image {
         position: absolute;
@@ -1463,8 +1469,9 @@ body.loading {
       }
 .article-grid .article .article-inner .article-image-field .image-container {
           position: relative;
-          aspect-ratio: 4/5;
+          padding-top: 125%;
         }
+/* aspect-ratio: 4/5; */
 .article-grid .article .article-inner .article-image-field .image-container .article-image {
             position: absolute;
             top: 0;
@@ -1662,8 +1669,9 @@ body.loading {
   }
 .article-list .article .article-inner .article-image-field .image-container {
           position: relative;
-          aspect-ratio: 4/5;
+          padding-top: 125%;
         }
+/* aspect-ratio: 4/5; */
 .article-list .article .article-inner .article-image-field .image-container .article-image {
             position: absolute;
             top: 0;
@@ -1788,8 +1796,9 @@ body.loading {
   }
 .article-combi .article .article-inner .article-image-field .image-container {
           position: relative;
-          aspect-ratio: 4/5;
+          padding-top: 125%;
         }
+/* aspect-ratio: 4/5; */
 .article-combi .article .article-inner .article-image-field .image-container .article-image {
             position: absolute;
             top: 0;
