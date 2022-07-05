@@ -600,6 +600,9 @@ p a:hover,
 [class*="ico-"].ico-sn-tiktok {
     background-image: url("data:image/svg+xml,%3Csvg enable-background='new 0 0 36 36' viewBox='0 0 36 36' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m32.9 9.5c-1.9 0-3.7-.6-5.2-1.7-1.7-1.2-2.8-3.1-3.3-5.2-.1-.5-.2-1.1-.2-1.6h-5.6v15.2 8.3c0 2.2-1.4 4.1-3.5 4.8-.6.2-1.2.3-1.9.2-.8 0-1.6-.3-2.3-.7-1.4-.9-2.4-2.4-2.5-4.2 0-2.8 2.2-5.1 5-5.1.6 0 1.1.1 1.6.3v-4.1-1.5c-.2-.2-.7-.2-1.3-.2-3.1 0-5.9 1.3-8 3.6-1.6 1.7-2.5 4-2.6 6.3-.2 3.1.9 6 3.1 8.1.3.3.7.6 1 .9 1.8 1.3 4.1 2.1 6.5 2.1.5 0 1.1 0 1.6-.1 2.2-.3 4.3-1.4 5.9-3 2-2 3.1-4.6 3.1-7.4v-12.4c1 .7 2 1.3 3.1 1.8 1.7.7 3.6 1.1 5.5 1.1v-4z'/%3E%3C/svg%3E");
   }
+[class*="ico-"].ico-sn-twitter {
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 26.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 36 36' style='enable-background:new 0 0 36 36;' xml:space='preserve'%3E%3Cpath d='M35,7.5c-1.3,0.6-2.6,0.9-4,1.1c1.4-0.9,2.5-2.2,3.1-3.9c-1.3,0.8-2.8,1.4-4.4,1.7c-1.3-1.4-3.1-2.2-5.1-2.2 c-3.9,0-7,3.1-7,7c0,0.5,0.1,1.1,0.2,1.6C11.9,12.5,6.8,9.7,3.4,5.5C2.8,6.5,2.4,7.7,2.4,9c0,2.4,1.2,4.6,3.1,5.8 c-1.1,0-2.2-0.4-3.2-0.9V14c0,3.4,2.4,6.2,5.6,6.8c-0.6,0.2-1.2,0.2-1.8,0.2c-0.4,0-0.9,0-1.3-0.1c0.9,2.8,3.5,4.8,6.5,4.8 c-2.4,1.9-5.4,3-8.7,3c-0.6,0-1.1,0-1.7-0.1c3.1,2,6.8,3.1,10.7,3.1c12.8,0,19.8-10.6,19.8-19.8c0-0.3,0-0.6,0-0.9 C32.9,10.1,34.1,8.9,35,7.5L35,7.5z'/%3E%3C/svg%3E%0A");
+  }
 /* Social Media Icon ::: Color */
 [class*="ico-"].ico-sharethis-fb {
     background-image: url("data:image/svg+xml,%3Csvg enable-background='new 0 0 48 48' viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m24 48c13.3 0 24-10.7 24-24s-10.7-24-24-24-24 10.7-24 24 10.7 24 24 24z' fill='%233b5998'/%3E%3Cpath d='m21 36h4.8v-12.1h3.4l.4-4h-3.7v-2.3c0-1 .2-1.3 1.1-1.3h2.6v-4.3h-3.3c-3.6 0-5.2 1.6-5.2 4.6v3.2h-2.5v4.2h2.4z' fill='%23fff'/%3E%3C/svg%3E");
@@ -3200,11 +3203,11 @@ body.loading {
     padding: 15px;
   }
 .author-content .article-featured-image {
-    margin: 0 -15px 1rem;
+    margin: 0 -15px 0;
   }
 @media (min-width: 768px) {
 .author-content .article-featured-image {
-      margin: 1rem -30px 1rem
+      margin: 1rem -30px 0
   }
   }
 .author-content .article-featured-image .image-container {
@@ -3217,13 +3220,18 @@ body.loading {
     padding-bottom: 1rem;
     margin-bottom: 1rem;
     border-bottom: 1px solid #e6e6e6;
+    text-align: center;
   }
 .author-content .author-details .author-name {
-      text-align: center;
       font-size: 1.5rem;
       font-style: italic;
+      margin-bottom: 0.25rem;
+    }
+.author-content .author-details .author-title {
+      color: #666666;
     }
 .author-content .author-details .author-connect {
+      padding: 0.5rem 0;
       margin-bottom: 1rem;
       text-align: center;
     }
