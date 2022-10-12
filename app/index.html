@@ -49,9 +49,24 @@
             </a>
           </div>
         </div>
-        <div class="flex-item r-fn"></div>
+        <div class="flex-item r-fn">
+          <a href="#mainSearch" class="search-trigger" data-bs-toggle="modal" data-bs-target="#mainSearch">
+            <span class="ico-magnifier size-18 c-black"><!--icon--></span>
+          </a>
+        </div>
       </div>
     </header>
+
+    <!-- Search Panel -->
+    <div class="search-container modal fade" id="mainSearch" tabindex="-1" aria-labelledby="mainSearchLabel" aria-hidden="true">
+      <div class="search-content modal-dialog">
+        <div class="modal-content">
+          <input type="text" class="search-input" autofocus />
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Panel -->
     <div class="nav-container offcanvas offcanvas-start" tabindex="-1" id="mainnav" aria-labelledby="mainnavLabel">
       <div class="offcanvas-header">
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>

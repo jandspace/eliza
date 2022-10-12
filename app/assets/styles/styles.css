@@ -16,6 +16,7 @@
 @import "modules/_comp--header.pcss";
 @import "modules/_comp--footer.pcss";
 @import "modules/_comp--nav.pcss";
+@import "modules/_comp--search.pcss";
 @import "modules/_comp--hero-carousel.pcss";
 @import "modules/_comp--article-card-grid.pcss";
 @import "modules/_comp--article-card-list.pcss";
