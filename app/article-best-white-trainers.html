@@ -136,7 +136,9 @@
             z-index: 2;
           }
           @supports (bottom: env(safe-area-inset-bottom)) and (height: env(safe-area-inset-bottom)) {
-            bottom: env(safe-area-inset-bottom);
+            .main-wrapper .article-feat-bar {
+              bottom: env(safe-area-inset-bottom);
+            }
           }
         </style>
         <!-- 
