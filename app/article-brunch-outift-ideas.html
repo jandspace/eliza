@@ -114,8 +114,11 @@
           Fixed Bottom Bar : START
         -->
         <div class="article-feat-bar">
-          <a href="https://samuelkraft.com/blog/safari-15-bottom-tab-bars-web" target="_blank">Fixed bottom bar</a>
+          <div class="article-feat-bar-inner">
+            <a href="https://samuelkraft.com/blog/safari-15-bottom-tab-bars-web" target="_blank">Fixed bottom bar</a>
+          </div>
         </div>
+
         <style>
           .article-feat-bar {
             --fixed-bottom-height: 52px;
@@ -125,10 +128,10 @@
             display: flex;
             flex-flow: row wrap;
             justify-content: center;
-            align-items: flex-start;
+            align-items: stretch;
 
             width: 100%;
-            height: var(--fixed-bottom-height);
+            min-height: var(--fixed-bottom-height);
             left: 0;
             bottom: 0;
 
@@ -140,6 +143,10 @@
             font-size: 14px;
             text-transform: uppercase;
             z-index: 2;
+          }
+          .article-feat-bar-inner {
+            height: var(--fixed-bottom-height);
+            background-color: orange;
           }
         </style>
         <!-- 
