@@ -128,12 +128,15 @@
             min-height: 52px;
             left: 0;
             bottom: 0;
-            bottom: env(safe-area-inset-bottom);
+
             background-color: #fddae6;
             border-top: 1px solid #ccc;
             font-size: 14px;
             text-transform: uppercase;
             z-index: 2;
+          }
+          @supports (bottom: env(safe-area-inset-bottom)) and (height: env(safe-area-inset-bottom)) {
+            bottom: env(safe-area-inset-bottom);
           }
         </style>
         <!-- 
