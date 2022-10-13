@@ -118,50 +118,29 @@
         -->
         <div class="article-bottom-features">
           <div class="article-bottom-features-container">
-            <a href="https://samuelkraft.com/blog/safari-15-bottom-tab-bars-web" target="_blank">Fixed bottom bar</a>
+            <div class="feature-left">
+              <!-- Left -->
+            </div>
+            <div class="feature-right">
+              <div class="social-share sharethis">
+                <div class="sharethis-container">
+                  <a href="#" class="btn share-facebook">
+                    <span class="ico-share-facebook"><!--icon--></span>
+                  </a>
+                  <a href="#" class="btn share-whatsapp">
+                    <span class="ico-share-whatsapp"><!--icon--></span>
+                  </a>
+                  <a href="#" class="btn share-email">
+                    <span class="ico-share-email"><!--icon--></span>
+                  </a>
+                  <a href="#" class="btn share-link">
+                    <span class="ico-share-link"><!--icon--></span>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <style>
-          .article-bottom-features {
-            --fixed-bottom-height: 50px;
-            --fixed-bottom-color: #fff;
-
-            position: fixed;
-            width: 100%;
-            min-height: var(--fixed-bottom-height);
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: var(--fixed-bottom-color);
-            border-top: 1px solid #ccc;
-            z-index: 9;
-            transition: all 0.3s ease-in-out;
-            transform: translateY(calc(var(--fixed-bottom-height) * 2));
-
-            padding-bottom: constant(safe-area-inset-bottom);
-            padding-bottom: env(safe-area-inset-bottom);
-
-            /* opacity: 0; */
-          }
-          .article-bottom-features-container {
-            width: 100%;
-            height: var(--fixed-bottom-height);
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-            align-items: center;
-          }
-          .article-bottom-features-container a {
-            font-size: 14px;
-            font-weight: 700;
-            text-transform: uppercase;
-          }
-          .article-bottom-features.appear {
-            opacity: 1;
-            transform: none;
-          }
-        </style>
         <!-- 
           Fixed Bottom Bar : END
         -->
@@ -1246,16 +1225,17 @@
 
     <script>
       $(function () {
-        var bottomfeatures = $(".article-bottom-features");
-        var hieghtThreshold = $(".article-content-body").offset().top;
-        var hieghtThreshold_end = $(".article-content-body").offset().top + $(".article-content-body").height();
+        var BottomBar = $(".article-bottom-features");
+        var appearThreshold = $(".article-content-body").offset().top - 360;
+        var appearThreshold_end = $(".article-content-body").offset().top + $(".article-content-body").height() - 360;
+
         $(window).scroll(function () {
           var scroll = $(window).scrollTop();
 
-          if (scroll >= hieghtThreshold && scroll <= hieghtThreshold_end) {
-            bottomfeatures.addClass("appear");
+          if (scroll >= appearThreshold && scroll <= appearThreshold_end) {
+            BottomBar.addClass("appear");
           } else {
-            bottomfeatures.removeClass("appear");
+            BottomBar.removeClass("appear");
           }
         });
       });

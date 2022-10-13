@@ -31,6 +31,7 @@
 @import "modules/_comp--tag-container-selected.pcss";
 @import "modules/_comp--article-breadcrumb.pcss";
 @import "modules/_comp--article-content-head.pcss";
+@import "modules/_comp--article-bottom-feature.pcss";
 @import "modules/_comp--article-content-share.pcss";
 @import "modules/_comp--article-content-body.pcss";
 @import "modules/_comp--article-body-text.pcss";
