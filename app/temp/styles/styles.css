@@ -797,7 +797,7 @@ label {
 }
   }
 .main-wrapper > .article {
-    padding: 15px;
+    padding: 0 15px;
     margin-bottom: 30px;
   }
 .main-wrapper > div:last-child, .main-wrapper > section:last-child, .main-wrapper > article:last-child {
@@ -2950,11 +2950,11 @@ body.loading {
 }
   }
 .article-content-head .article-featured-image {
-    margin: -15px -15px 1rem;
+    margin: 0 -15px 1rem;
   }
 @media (min-width: 768px) {
 .article-content-head .article-featured-image {
-      margin: -15px -30px 1rem
+      margin: 0 -30px 1rem
   }
   }
 .article-content-head .desc-container {
@@ -2980,6 +2980,7 @@ body.loading {
         -ms-flex-align: center;
             align-items: center;
     font-size: 0.875rem;
+    margin-bottom: 1rem;
   }
 .article-content-head .pubinfo-container .info-author {
       display: -webkit-box;
