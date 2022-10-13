@@ -119,7 +119,7 @@
         <style>
           .article-feat-bar {
             --fixed-bottom-height: 52px;
-            --fixed-bottom-color: beige;
+            --fixed-bottom-color: AliceBlue;
 
             position: fixed;
             display: flex;
@@ -143,13 +143,15 @@
               bottom: env(safe-area-inset-bottom);
             }
             .article-feat-bar:after {
-              height: env(safe-area-inset-bottom);
-
               content: "";
+              display: block;
               position: absolute;
+              width: 100%;
+              height: var(--fixed-bottom-height);
+
               background-color: var(--fixed-bottom-color);
-              left: 0;
               top: var(--fixed-bottom-height);
+              left: 0;
             }
           }
         </style>
